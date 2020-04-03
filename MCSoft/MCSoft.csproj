@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin-add.html" />
+    <None Include="wwwroot\admin-cate.html" />
+    <None Include="wwwroot\admin-edit.html" />
+    <None Include="wwwroot\admin-list.html" />
+    <None Include="wwwroot\admin-role.html" />
+    <None Include="wwwroot\admin-rule.html" />
+    <None Include="wwwroot\cate.html" />
+    <None Include="wwwroot\city.html" />
+    <None Include="wwwroot\demo.html" />
+    <None Include="wwwroot\echarts1.html" />
+    <None Include="wwwroot\echarts2.html" />
+    <None Include="wwwroot\echarts3.html" />
+    <None Include="wwwroot\echarts4.html" />
+    <None Include="wwwroot\echarts5.html" />
+    <None Include="wwwroot\echarts6.html" />
+    <None Include="wwwroot\echarts7.html" />
+    <None Include="wwwroot\echarts8.html" />
+    <None Include="wwwroot\error.html" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\log.html" />
+    <None Include="wwwroot\login.html" />
+    <None Include="wwwroot\member-add.html" />
+    <None Include="wwwroot\member-del.html" />
+    <None Include="wwwroot\member-edit.html" />
+    <None Include="wwwroot\member-list.html" />
+    <None Include="wwwroot\member-list1.html" />
+    <None Include="wwwroot\member-password.html" />
+    <None Include="wwwroot\order-add.html" />
+    <None Include="wwwroot\order-list.html" />
+    <None Include="wwwroot\order-list1.html" />
+    <None Include="wwwroot\README.md" />
+    <None Include="wwwroot\role-add.html" />
+    <None Include="wwwroot\unicode.html" />
+    <None Include="wwwroot\welcome.html" />
+    <None Include="wwwroot\welcome1.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.aspnetcore.staticfiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="2.3.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MCSoft.Application\MCSoft.Application.csproj" />
+    <ProjectReference Include="..\MCSoft.Infrastructure\MCSoft.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
+
+
+</Project>

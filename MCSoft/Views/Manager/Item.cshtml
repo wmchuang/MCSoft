@@ -1,0 +1,151 @@
+﻿@model MCSoft.Application.Dto.Manager.ManagerRoleDto
+@{
+    ViewData["Title"] = "Item";
+    var role = ViewBag.Role;
+}
+<div class="layui-fluid">
+    <div class="layui-row">
+        <form class="layui-form">
+            <input type="text" id="id" name="id" hidden>
+            <div class="layui-form-item">
+                <label for="username" class="layui-form-label">
+                    <span class="x-red">*</span>登录名
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="username" name="username" required="" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+                    <span class="x-red">*</span>将会成为您唯一的登入名
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="x-red">*</span>角色</label>
+                <div class="layui-input-block">
+                    @foreach (var item in role)
+                    {
+                        <input type="checkbox" name="role" lay-skin="primary" title="@item.Name" value="@item.Id">
+                    }
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_pass" class="layui-form-label">
+                    <span class="x-red">*</span>密码
+                </label>
+                <div class="layui-input-inline">
+                    <input type="password" id="L_pass" required="" lay-verify="pass"
+                           autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+                    6到16个字符
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_repass" class="layui-form-label">
+                    <span class="x-red">*</span>确认密码
+                </label>
+                <div class="layui-input-inline">
+                    <input type="password" id="L_repass" name="password" required="" lay-verify="repass"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>状态
+                </label>
+                <div class="layui-input-block">
+                    <input type="checkbox" ay-verify="switchVerify" value="true" name="isDisabled" lay-text="启用|仅用" checked="" lay-skin="switch">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_repass" class="layui-form-label">
+                </label>
+                <button class="layui-btn" lay-filter="add" lay-submit="">
+                    增加
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    layui.use(['form', 'layer'],
+        function () {
+            $ = layui.jquery;
+            var form = layui.form,
+                layer = layui.layer;
+
+            @if (Model.ManagerDto != null)
+            {
+                <text>
+                $("#username").val('@Html.Raw(Model.ManagerDto.UserName)');
+                $("#id").val('@Model.ManagerDto.Id');
+                $("input[name='isDisabled']").prop("checked","@Model.ManagerDto.IsDisabled" == "True");
+                </text>
+                {
+                    foreach (var item in Model.RoleList)
+                    {
+                        <text>
+                        $("input[title='@Html.Raw(item.Name)']").prop("checked", true);
+
+                        </text>
+
+                    }
+                    <text>
+                    form.render();
+                    </text>
+                }
+            }
+
+            //自定义验证规则
+            form.verify({
+                nikename: function (value) {
+                    if (value.length < 5) {
+                        return '昵称至少得5个字符啊';
+                    }
+                },
+                pass: [/(.+){6,12}$/, '密码必须6到12位'],
+                repass: function (value) {
+                    if ($('#L_pass').val() != $('#L_repass').val()) {
+                        return '两次密码不一致';
+                    }
+                },
+                 switchVerify: function(value,elem){
+                    elem.value = elem.checked;
+                   //注意类型被修改成隐藏域，将不是复选框
+                    elem.type='hidden';
+                }
+            });
+
+            //监听提交
+            form.on('submit(add)',
+                function (data) {
+                    var field = data.field;
+
+                      var arr = new Array();
+                    $("input:checkbox[name='role']:checked").each(function(i){
+                        arr[i] = $(this).val();
+                    })
+                    field.roleIds = arr;
+                    abp.ajax({
+                        type: "POST",
+                        url: "@Url.Action("Save")",
+                        data: JSON.stringify(field),
+                        success: function (res) {
+                            console.log(status);
+                            layer.alert("增加成功", {
+                                    icon: 6
+                                },
+                                    function () {
+                                        //关闭当前frame
+                                        xadmin.close();
+                                        // 可以对父窗口进行刷新
+                                        xadmin.father_reload();
+                                    });
+                        }
+                    });
+                    return false;
+                });
+
+        });
+</script>
+

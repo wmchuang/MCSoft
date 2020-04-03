@@ -1,0 +1,30 @@
+﻿@model Volo.Abp.UI.Navigation.ApplicationMenuItemList
+
+@foreach (var menu in Model)
+{
+    if (menu.Items.Count == 0)
+    {
+        @*<li class="@(isActive ? "active" : "")"><a href="@menu.Url" target="iframe"><i class="fa fa-link"></i> <span>@menu.DisplayName</span></a></li>*@
+    }
+    else
+    {
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont left-nav-li" lay-tips="@menu.Name">@Html.Raw(menu.Icon.ToString())</i>
+                <cite>@menu.Name</cite>
+                <i class="iconfont nav_right">&#xe697;</i>
+            </a>
+            <ul class="sub-menu">
+                @foreach (var item in menu.Items)
+                {
+                    <li>
+                        <a onclick="xadmin.add_tab('@item.Name','@item.Url')">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>@item.Name</cite>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+}
