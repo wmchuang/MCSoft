@@ -60,6 +60,50 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
 
             #endregion
 
+            #region App
+            builder.Entity<User>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "users", MCSoftConsts.DbSchema);
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Head>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "heads", MCSoftConsts.DbSchema);
+                b.OwnsOne(o => o.Address, a => {
+                    a.WithOwner();
+                });
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Category>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "categorys", MCSoftConsts.DbSchema);
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Cart>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "carts", MCSoftConsts.DbSchema);
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Order>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "orders", MCSoftConsts.DbSchema);
+                b.OwnsOne(o => o.Address, a => {
+                    a.WithOwner();
+                });
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<OrderItem>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "orderitems", MCSoftConsts.DbSchema);
+                b.HasKey(x => new { x.OrderId, x.ProductId });
+                b.ConfigureByConvention();
+            });
+            #endregion
         }
     }
 }

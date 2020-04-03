@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCSoft.Application", "MCSof
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSoft.Utility", "MCSoft.Utility\MCSoft.Utility.csproj", "{AB804ABF-5A3B-4625-BF05-CCED7F61523E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSoft.Api", "MCSoft.Api\MCSoft.Api.csproj", "{F5917F8F-1224-4DEB-AFB0-0FB10592858A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AB804ABF-5A3B-4625-BF05-CCED7F61523E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB804ABF-5A3B-4625-BF05-CCED7F61523E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB804ABF-5A3B-4625-BF05-CCED7F61523E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5917F8F-1224-4DEB-AFB0-0FB10592858A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5917F8F-1224-4DEB-AFB0-0FB10592858A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5917F8F-1224-4DEB-AFB0-0FB10592858A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5917F8F-1224-4DEB-AFB0-0FB10592858A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

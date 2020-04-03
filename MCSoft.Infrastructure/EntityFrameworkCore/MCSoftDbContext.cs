@@ -24,6 +24,20 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
 
         public DbSet<RoleMenu> RoleMenus { get; set; }
 
+        #region APP
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<Head> Heads { get; set; }
+
+        public DbSet<Category> Categorys { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<Cart> Carts { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+        #endregion
+
         public MCSoftDbContext(DbContextOptions<MCSoftDbContext> options)
            : base(options)
         {

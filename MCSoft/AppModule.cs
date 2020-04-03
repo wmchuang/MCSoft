@@ -9,7 +9,7 @@ using Volo.Abp.Autofac;
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 
-namespace BasicAspNetCoreApplication
+namespace MCSoft
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule),
                typeof(MCSoftApplicationModule),
