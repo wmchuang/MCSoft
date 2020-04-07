@@ -14,7 +14,7 @@ namespace MCSoft.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.2")
+                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("MCSoft.Domain.Models.Cart", b =>
@@ -394,7 +394,7 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<uint>("ProductCount")
                         .HasColumnType("int unsigned");
 
-                    b.Property<Guid>("userId")
+                    b.Property<Guid>("UserId")
                         .HasColumnType("char(36)");
 
                     b.HasKey("Id");
@@ -426,9 +426,18 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<Guid>("Id")
                         .HasColumnType("char(36)");
 
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("char(36)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("ContentImg")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("CoverImg")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<DateTime>("CreationTime")
@@ -447,11 +456,11 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnName("DeletionTime")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("ExtraProperties")
-                        .HasColumnName("ExtraProperties")
+                    b.Property<string>("Details")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("Img")
+                    b.Property<string>("ExtraProperties")
+                        .HasColumnName("ExtraProperties")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<bool>("IsDeleted")
@@ -471,18 +480,27 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<string>("Notice")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<decimal>("OldPrice")
+                        .HasColumnType("decimal(65,30)");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(65,30)");
 
                     b.Property<uint>("SaleCounts")
                         .HasColumnType("int unsigned");
 
+                    b.Property<string>("ShortName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<uint>("Stock")
                         .HasColumnType("int unsigned");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
+                    b.ToTable("app_products");
                 });
 
             modelBuilder.Entity("MCSoft.Domain.Models.Role", b =>

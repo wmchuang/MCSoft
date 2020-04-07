@@ -82,6 +82,12 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
                 b.ConfigureByConvention();
             });
 
+            builder.Entity<Product>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "products", MCSoftConsts.DbSchema);
+                b.ConfigureByConvention();
+            });
+
             builder.Entity<Cart>(b =>
             {
                 b.ToTable(MCSoftConsts.DbTablePrefix + "carts", MCSoftConsts.DbSchema);
