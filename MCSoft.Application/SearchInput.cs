@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 
 namespace MCSoft.Application
@@ -18,7 +19,7 @@ namespace MCSoft.Application
         /// </summary>
         public int SkipCount
         {
-            get { return (this.Page - 1) * this.Limit; }
+            get { return GetSkipCount(); }
             set { this.skipCount = value; }
         }
 
@@ -40,6 +41,14 @@ namespace MCSoft.Application
         public int Limit { get; set; }
 
         public string Keyword { get; set; }
+
+        private int GetSkipCount()
+        {
+            if (Page <= 0)
+                throw new UserFriendlyException("页码必须大于0");
+
+            return (this.Page - 1) * this.Limit;
+        }
         #endregion
     }
 }

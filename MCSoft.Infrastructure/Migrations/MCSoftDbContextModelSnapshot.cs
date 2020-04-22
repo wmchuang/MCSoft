@@ -17,7 +17,7 @@ namespace MCSoft.Infrastructure.Migrations
                 .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("MCSoft.Domain.Models.Cart", b =>
+            modelBuilder.Entity("MCSoft.Domain.Models.Evaluate", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("char(36)");
@@ -27,8 +27,8 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnName("ConcurrencyStamp")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<uint>("Count")
-                        .HasColumnType("int unsigned");
+                    b.Property<string>("Content")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnName("CreationTime")
@@ -50,6 +50,9 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnName("ExtraProperties")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<Guid>("HeadId")
+                        .HasColumnType("char(36)");
+
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("IsDeleted")
@@ -62,9 +65,6 @@ namespace MCSoft.Infrastructure.Migrations
 
                     b.Property<Guid?>("LastModifierId")
                         .HasColumnName("LastModifierId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("ProductId")
                         .HasColumnType("char(36)");
 
                     b.Property<Guid>("UserId")
@@ -72,65 +72,9 @@ namespace MCSoft.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("app_carts");
-                });
+                    b.HasIndex("UserId");
 
-            modelBuilder.Entity("MCSoft.Domain.Models.Category", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnName("ConcurrencyStamp")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnName("CreationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("CreatorId")
-                        .HasColumnName("CreatorId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid?>("DeleterId")
-                        .HasColumnName("DeleterId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime?>("DeletionTime")
-                        .HasColumnName("DeletionTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("ExtraProperties")
-                        .HasColumnName("ExtraProperties")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Img")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<bool>("IsDeleted")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("IsDeleted")
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(false);
-
-                    b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnName("LastModificationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("LastModifierId")
-                        .HasColumnName("LastModifierId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<Guid?>("ParentId")
-                        .HasColumnType("char(36)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("app_categorys");
+                    b.ToTable("app_evaluates");
                 });
 
             modelBuilder.Entity("MCSoft.Domain.Models.Head", b =>
@@ -166,6 +110,9 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnName("ExtraProperties")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<int>("HeadStatus")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("IsDeleted")
@@ -180,6 +127,9 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnName("LastModifierId")
                         .HasColumnType("char(36)");
 
+                    b.Property<string>("Location")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -189,13 +139,15 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<string>("Remark")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<Guid>("UserId")
+                    b.Property<Guid?>("UserId")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("WxNumber")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("app_heads");
                 });
@@ -338,98 +290,9 @@ namespace MCSoft.Infrastructure.Migrations
                     b.ToTable("rbac_Menus");
                 });
 
-            modelBuilder.Entity("MCSoft.Domain.Models.Order", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .HasColumnType("char(36)");
-
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(11, 2)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnName("ConcurrencyStamp")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnName("CreationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("CreatorId")
-                        .HasColumnName("CreatorId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid?>("DeleterId")
-                        .HasColumnName("DeleterId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime?>("DeletionTime")
-                        .HasColumnName("DeletionTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("ExtraProperties")
-                        .HasColumnName("ExtraProperties")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<Guid>("HeadId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<bool>("IsDeleted")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("IsDeleted")
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(false);
-
-                    b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnName("LastModificationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("LastModifierId")
-                        .HasColumnName("LastModifierId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("OrderNo")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<int>("OrderStatus")
-                        .HasColumnType("int");
-
-                    b.Property<uint>("ProductCount")
-                        .HasColumnType("int unsigned");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("char(36)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("app_orders");
-                });
-
-            modelBuilder.Entity("MCSoft.Domain.Models.OrderItem", b =>
-                {
-                    b.Property<Guid>("OrderId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(11, 2)");
-
-                    b.HasKey("OrderId", "ProductId");
-
-                    b.ToTable("app_orderitems");
-                });
-
             modelBuilder.Entity("MCSoft.Domain.Models.Product", b =>
                 {
                     b.Property<Guid>("Id")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("CategoryId")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -466,6 +329,9 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnName("ExtraProperties")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<Guid>("HeadId")
+                        .HasColumnType("char(36)");
+
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("IsDeleted")
@@ -492,25 +358,12 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<string>("Notice")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<decimal>("OldPrice")
-                        .HasColumnType("decimal(11, 2)");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(11, 2)");
 
-                    b.Property<uint>("SaleCounts")
-                        .HasColumnType("int unsigned");
-
-                    b.Property<string>("ShortName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<uint>("Stock")
-                        .HasColumnType("int unsigned");
-
-                    b.Property<Guid?>("TwoCategoryId")
-                        .HasColumnType("char(36)");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("HeadId");
 
                     b.ToTable("app_products");
                 });
@@ -588,6 +441,9 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<Guid>("Id")
                         .HasColumnType("char(36)");
 
+                    b.Property<Guid?>("BelongHeadId")
+                        .HasColumnType("char(36)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnName("ConcurrencyStamp")
@@ -612,9 +468,6 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<string>("ExtraProperties")
                         .HasColumnName("ExtraProperties")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<Guid>("HeadId")
-                        .HasColumnType("char(36)");
 
                     b.Property<string>("HeadImg")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -644,164 +497,27 @@ namespace MCSoft.Infrastructure.Migrations
                     b.ToTable("app_users");
                 });
 
-            modelBuilder.Entity("MCSoft.Domain.Person", b =>
+            modelBuilder.Entity("MCSoft.Domain.Models.Evaluate", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .HasColumnType("char(36)");
-
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("Birthday")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("CityId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnName("ConcurrencyStamp")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnName("CreationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("CreatorId")
-                        .HasColumnName("CreatorId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid?>("DeleterId")
-                        .HasColumnName("DeleterId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime?>("DeletionTime")
-                        .HasColumnName("DeletionTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("ExtraProperties")
-                        .HasColumnName("ExtraProperties")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<bool>("IsDeleted")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("IsDeleted")
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(false);
-
-                    b.Property<DateTime?>("LastActive")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnName("LastModificationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("LastModifierId")
-                        .HasColumnName("LastModifierId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<Guid?>("TenantId")
-                        .HasColumnType("char(36)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Persons");
-                });
-
-            modelBuilder.Entity("MCSoft.Domain.Phone", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("Number")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<Guid>("PersonId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PersonId");
-
-                    b.ToTable("Phone");
-                });
-
-            modelBuilder.Entity("MCSoft.Domain.Models.Head", b =>
-                {
-                    b.OwnsOne("MCSoft.Domain.Models.Address", "Address", b1 =>
-                        {
-                            b1.Property<Guid>("HeadId")
-                                .HasColumnType("char(36)");
-
-                            b1.Property<string>("Area")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.Property<string>("City")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.Property<string>("Location")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.Property<string>("Province")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.HasKey("HeadId");
-
-                            b1.ToTable("app_heads");
-
-                            b1.WithOwner()
-                                .HasForeignKey("HeadId");
-                        });
-                });
-
-            modelBuilder.Entity("MCSoft.Domain.Models.Order", b =>
-                {
-                    b.OwnsOne("MCSoft.Domain.Models.Address", "Address", b1 =>
-                        {
-                            b1.Property<Guid>("OrderId")
-                                .HasColumnType("char(36)");
-
-                            b1.Property<string>("Area")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.Property<string>("City")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.Property<string>("Location")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.Property<string>("Province")
-                                .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                            b1.HasKey("OrderId");
-
-                            b1.ToTable("app_orders");
-
-                            b1.WithOwner()
-                                .HasForeignKey("OrderId");
-                        });
-                });
-
-            modelBuilder.Entity("MCSoft.Domain.Models.OrderItem", b =>
-                {
-                    b.HasOne("MCSoft.Domain.Models.Order", null)
-                        .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
+                    b.HasOne("MCSoft.Domain.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MCSoft.Domain.Phone", b =>
+            modelBuilder.Entity("MCSoft.Domain.Models.Head", b =>
                 {
-                    b.HasOne("MCSoft.Domain.Person", null)
-                        .WithMany("Phones")
-                        .HasForeignKey("PersonId")
+                    b.HasOne("MCSoft.Domain.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("MCSoft.Domain.Models.Product", b =>
+                {
+                    b.HasOne("MCSoft.Domain.Models.Head", null)
+                        .WithMany("Product")
+                        .HasForeignKey("HeadId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

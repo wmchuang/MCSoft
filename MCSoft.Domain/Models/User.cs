@@ -8,7 +8,7 @@ namespace MCSoft.Domain.Models
     /// <summary>
     /// 用户
     /// </summary>
-    public class User : FullAuditedAggregateRoot<Guid>
+    public partial class User : FullAuditedAggregateRoot<Guid>
     {
         #region wx
         /// <summary>
@@ -29,9 +29,29 @@ namespace MCSoft.Domain.Models
 
         #endregion
 
-        public Guid HeadId { get; set; }
+        public Guid? BelongHeadId { get; set; }
+    }
+
+    public partial class User
+    {
+        private User() { }
+
+        public User(string wxopenId, string nickname, string headImg, Guid headId)
+        {
+            this.WxOpenId = wxopenId;
+            this.NickName = nickname;
+            this.HeadImg = headImg;
+            this.BelongHeadId = headId;
+        }
 
 
-
+        /// <summary>
+        /// 更改团长
+        /// </summary>
+        /// <param name="headId"></param>
+        public void ChangeHead(Guid headId)
+        {
+            this.BelongHeadId = headId;
+        }
     }
 }

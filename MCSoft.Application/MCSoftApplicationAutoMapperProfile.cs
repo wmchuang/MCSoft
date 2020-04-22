@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using MCSoft.Application.Dto;
-using MCSoft.Application.Dto.Category;
+using MCSoft.Application.Dto.Head;
 using MCSoft.Application.Dto.Product;
-using MCSoft.Domain;
+using MCSoft.Application.Dto.User;
 using MCSoft.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -19,8 +19,6 @@ namespace MCSoft.Application
              * into multiple profile classes for a better organization. */
 
             #region RBAC
-            CreateMap<Person, PersonDto>().ReverseMap();
-            CreateMap<Phone, PhoneDto>().ReverseMap();
 
             CreateMap<Manager, ManagerDto>().ReverseMap();
             CreateMap<ManagerSaveDto, ManagerDto>();
@@ -33,16 +31,22 @@ namespace MCSoft.Application
 
             #endregion
 
-            CreateMap<Category, CategoryDto>().ReverseMap();
-            CreateMap<CategorySaveDto, CategoryDto>();
-            CreateMap<CategorySaveDto, CategoryUpdateDto>();
-            CreateMap<CategoryUpdateDto, Category>();
+            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<User, UserSimpleDto>().ReverseMap();
 
+            CreateMap<Head, HeadDto>().ForMember(d => d.UserDto, opt =>
+            {
+                opt.MapFrom(s => s.User);
+            }).ReverseMap();
+            CreateMap<HeadSaveDto, HeadDto>();
+            CreateMap<HeadSaveDto, HeadUpdateDto>();
+            CreateMap<HeadUpdateDto, Head>();
 
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<ProductSaveDto, ProductDto>();
             CreateMap<ProductSaveDto, ProductUpdateDto>();
             CreateMap<ProductUpdateDto, Product>();
+            CreateMap<Product, SmallProductDto>();
 
         }
     }

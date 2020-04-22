@@ -11,9 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCSoft.Infrastructure", "MC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCSoft.Application", "MCSoft.Application\MCSoft.Application.csproj", "{68509468-52C9-439D-9B6A-642E211A653D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSoft.Utility", "MCSoft.Utility\MCSoft.Utility.csproj", "{AB804ABF-5A3B-4625-BF05-CCED7F61523E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCSoft.Utility", "MCSoft.Utility\MCSoft.Utility.csproj", "{AB804ABF-5A3B-4625-BF05-CCED7F61523E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSoft.Api", "MCSoft.Api\MCSoft.Api.csproj", "{F5917F8F-1224-4DEB-AFB0-0FB10592858A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCSoft.Api", "MCSoft.Api\MCSoft.Api.csproj", "{F5917F8F-1224-4DEB-AFB0-0FB10592858A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78648D24-B661-477B-9FA9-8746C397065B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

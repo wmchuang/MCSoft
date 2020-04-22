@@ -12,8 +12,6 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
     [ConnectionStringName("Default")]
     public class MCSoftDbContext : AbpDbContext<MCSoftDbContext>
     {
-        public DbSet<Person> Persons { get; set; }
-
         public DbSet<Manager> Managers { get; set; }
 
         public DbSet<ManagerRole> ManagerRoles { get; set; }
@@ -29,13 +27,10 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
 
         public DbSet<Head> Heads { get; set; }
 
-        public DbSet<Category> Categorys { get; set; }
-
         public DbSet<Product> Products { get; set; }
 
-        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Evaluate> Evaluates { get; set; }
 
-        public DbSet<Order> Orders { get; set; }
         #endregion
 
         public MCSoftDbContext(DbContextOptions<MCSoftDbContext> options)

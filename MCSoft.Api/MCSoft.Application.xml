@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MCSoft.Application</name>
+    </assembly>
+    <members>
+        <member name="P:MCSoft.Application.Dto.Head.HeadDto.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Head.HeadDto.CellName">
+            <summary>
+            小区名
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Head.HeadUpdateDto.CellName">
+            <summary>
+            小区名
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.Name">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.CoverImg">
+            <summary>
+            封面图
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.ContentImg">
+            <summary>
+            商品图片
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.Price">
+            <summary>
+            商品价格
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.Details">
+            <summary>
+            详情
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.Notice">
+            <summary>
+            须知
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.IsEnable">
+            <summary>
+            是否上架
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductDto.Label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.Name">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.CoverImg">
+            <summary>
+            封面图
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.ContentImg">
+            <summary>
+            商品图片
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.Price">
+            <summary>
+            商品价格
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.Details">
+            <summary>
+            详情
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.Notice">
+            <summary>
+            须知
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.ProductUpdateDto.Label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.SmallProductDto.Name">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.SmallProductDto.CoverImg">
+            <summary>
+            封面图
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.SmallProductDto.Price">
+            <summary>
+            商品价格
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.User.UserDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.User.UserDto.HeadImg">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.User.UserDto.WxOpenId">
+            <summary>
+            微信openID
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.User.UserSimpleDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.User.UserSimpleDto.HeadImg">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.User.UserSimpleDto.WxOpenId">
+            <summary>
+            微信openID
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.SearchInput.Sorting">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.SearchInput.SkipCount">
+            <summary>
+            跳过数量
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.SearchInput.MaxResultCount">
+            <summary>
+            页面大小
+            </summary>
+        </member>
+        <member name="M:MCSoft.Application.Service.ProductAppService.ChangEnable(System.Guid,System.Boolean)">
+            <summary>
+            商品上下架
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Application.Service.UserAppService.ChangeHead(System.Guid)">
+            <summary>
+            修改自提点
+            </summary>
+            <param name="headId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Application.Service.UserAppService.CurrentHead">
+            <summary>
+            当前自提点
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

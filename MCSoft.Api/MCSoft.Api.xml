@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MCSoft.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MCSoft.Api.AuthConfigurer">
+            <summary>
+            添加授权配置信息
+            </summary>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.CommonController.UploadImg(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="formFile">图片文件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.HeadController.Save(MCSoft.Application.Dto.Head.HeadSaveDto)">
+            <summary>
+            申请成为团长
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MCSoft.Api.Controllers.ProductController">
+            <summary>
+            商品
+            </summary>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.ProductController.Save(MCSoft.Application.Dto.Product.ProductSaveDto)">
+            <summary>
+            添加商品
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.ProductController.Get(System.Guid)">
+            <summary>
+            获取商品
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.ProductController.Search(MCSoft.Application.Dto.Product.ProductSearchInput)">
+            <summary>
+            商品列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.ProductController.ChangEnable(System.Guid,System.Boolean)">
+            <summary>
+            上下架
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.ProductController.Delete(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MCSoft.Api.Controllers.TokenAuthController">
+            <summary>
+            登录授权
+            </summary>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.TokenAuthController.AuthenticateLogin(MCSoft.Utility.Auth.AuthenticateInput)">
+            <summary>
+            微信小程序授权获取openId接口
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.TokenAuthController.Authenticate(MCSoft.Utility.Auth.WxAuthenticateInputModel)">
+            <summary>
+            微信小程序授权更新昵称和头像接口
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest(MCSoft.Utility.Auth.TeatAuthenticateInput)">
+            <summary>
+            测试的授权接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.UserController.ChangeHead(System.Guid)">
+            <summary>
+            切换团长/自提点
+            </summary>
+            <param name="headId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.UserController.CurrentHead">
+            <summary>
+            用户当前自提点
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

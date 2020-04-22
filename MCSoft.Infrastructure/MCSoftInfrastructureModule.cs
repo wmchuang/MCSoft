@@ -26,10 +26,6 @@ namespace MCSoft.Infrastructure
                  * default repositories only for aggregate roots */
                 options.AddDefaultRepositories(includeAllEntities: true);
 
-                options.Entity<Person>(opt =>
-                {
-                    opt.DefaultWithDetailsFunc = q => q.Include(p => p.Phones);
-                });
             });
 
             Configure<AbpDbContextOptions>(options =>

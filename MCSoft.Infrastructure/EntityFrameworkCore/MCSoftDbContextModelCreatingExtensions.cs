@@ -70,15 +70,6 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
             builder.Entity<Head>(b =>
             {
                 b.ToTable(MCSoftConsts.DbTablePrefix + "heads", MCSoftConsts.DbSchema);
-                b.OwnsOne(o => o.Address, a => {
-                    a.WithOwner();
-                });
-                b.ConfigureByConvention();
-            });
-
-            builder.Entity<Category>(b =>
-            {
-                b.ToTable(MCSoftConsts.DbTablePrefix + "categorys", MCSoftConsts.DbSchema);
                 b.ConfigureByConvention();
             });
 
@@ -86,31 +77,12 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
             {
                 b.ToTable(MCSoftConsts.DbTablePrefix + "products", MCSoftConsts.DbSchema);
                 b.Property(x => x.Price).HasColumnType("decimal(11, 2)");
-                b.Property(x => x.OldPrice).HasColumnType("decimal(11, 2)");
                 b.ConfigureByConvention();
             });
 
-            builder.Entity<Cart>(b =>
+            builder.Entity<Evaluate>(b =>
             {
-                b.ToTable(MCSoftConsts.DbTablePrefix + "carts", MCSoftConsts.DbSchema);
-                b.ConfigureByConvention();
-            });
-
-            builder.Entity<Order>(b =>
-            {
-                b.ToTable(MCSoftConsts.DbTablePrefix + "orders", MCSoftConsts.DbSchema);
-                b.OwnsOne(o => o.Address, a => {
-                    a.WithOwner();
-                });
-                b.Property(x => x.Amount).HasColumnType("decimal(11, 2)");
-                b.ConfigureByConvention();
-            });
-
-            builder.Entity<OrderItem>(b =>
-            {
-                b.ToTable(MCSoftConsts.DbTablePrefix + "orderitems", MCSoftConsts.DbSchema);
-                b.HasKey(x => new { x.OrderId, x.ProductId });
-                b.Property(x => x.Price).HasColumnType("decimal(11, 2)");
+                b.ToTable(MCSoftConsts.DbTablePrefix + "evaluates", MCSoftConsts.DbSchema);
                 b.ConfigureByConvention();
             });
             #endregion

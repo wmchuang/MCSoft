@@ -1,0 +1,802 @@
+15:47 || Information ||  || Starting web host. ||  ||end 
+15:51 || Information ||  || Starting web host. ||  ||end 
+15:51 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+15:51 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+15:51 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+15:51 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+15:51 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\AWrok\群商品\back\MCSoft\MCSoft.Api" ||  ||end 
+15:51 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("80"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`CreationTime`, `r`.`CreatorId`, `r`.`DeleterId`, `r`.`DeletionTime`, `r`.`ExtraProperties`, `r`.`Icon`, `r`.`IsDeleted`, `r`.`LastModificationTime`, `r`.`LastModifierId`, `r`.`Name`, `r`.`Order`, `r`.`ParentId`, `r`.`Url`
+FROM `rbac_Menus` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+15:51 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 182.9386ms 200 text/html;charset=utf-8 ||  ||end 
+15:51 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 178.9887ms 200 application/json;charset=utf-8 ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("7"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("7"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("3"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("9"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:51 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `rbac_Roles` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 POST https://localhost:44346/api/TokenAuth/AuthenticateTest application/json 22 ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)"' ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"AuthenticateTest\", controller = \"TokenAuth\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[MCSoft.Utility.Auth.AuthenticateResultModel] AuthenticateTest(MCSoft.Utility.Auth.TeatAuthenticateInput)" on controller "MCSoft.Api.Controllers.TokenAuthController" ("MCSoft.Api"). ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)" - Validation state: Valid ||  ||end 
+15:52 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:52 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__wxOpenId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`BelongHeadId`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadImg`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`NickName`, `a`.`WxOpenId`
+FROM `app_users` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`WxOpenId` = @__wxOpenId_0)
+LIMIT 1" ||  ||end 
+15:52 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("0"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`CellName`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadStatus`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Location`, `a`.`Name`, `a`.`Phone`, `a`.`Remark`, `a`.`UserId`, `a`.`WxNumber`
+FROM `app_heads` AS `a`
+WHERE @__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)
+LIMIT 1" ||  ||end 
+15:52 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime), @p10='?' (DbType = Guid), @p11='?' (Size = 4000), @p12='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `app_users` (`Id`, `BelongHeadId`, `ConcurrencyStamp`, `CreationTime`, `CreatorId`, `DeleterId`, `DeletionTime`, `ExtraProperties`, `HeadImg`, `LastModificationTime`, `LastModifierId`, `NickName`, `WxOpenId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT `IsDeleted`
+FROM `app_users`
+WHERE ROW_COUNT() = 1 AND `Id` = @p0;" ||  ||end 
+15:52 || Error || Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter || ---------- RemoteServiceErrorInfo ---------- ||  ||end 
+15:52 || Error || Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter || {
+  "code": null,
+  "message": "An internal error occurred during your request!",
+  "details": null,
+  "validationErrors": null
+} ||  ||end 
+15:52 || Error || Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter || Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> UserDto
+MCSoft.Domain.Models.User -> MCSoft.Application.Dto.User.UserDto || AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> UserDto
+MCSoft.Domain.Models.User -> MCSoft.Application.Dto.User.UserDto
+   at lambda_method(Closure , User , UserDto , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Volo.Abp.AutoMapper.AutoMapperAutoObjectMappingProvider.Map[TSource,TDestination](Object source)
+   at Volo.Abp.ObjectMapping.DefaultObjectMapper.AutoMap[TSource,TDestination](Object source)
+   at Volo.Abp.ObjectMapping.DefaultObjectMapper.Map[TSource,TDestination](TSource source)
+   at MCSoft.Application.Service.UserAppService.Authorize(String wxOpenId, Nullable`1 headId) in E:\AWrok\群商品\back\MCSoft\MCSoft.Application\Service\UserAppService.cs:line 24
+   at MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest(TeatAuthenticateInput input) in E:\AWrok\群商品\back\MCSoft\MCSoft.Api\Controllers\TokenAuthController.cs:line 103
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ ||end 
+15:52 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing ObjectResult, writing value of type '"Volo.Abp.Http.RemoteServiceErrorResponse"'. ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)" in 4848.9692ms ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)"' ||  ||end 
+15:52 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 4978.4616ms 500 application/json; charset=utf-8 ||  ||end 
+15:54 || Information ||  || Starting web host. ||  ||end 
+15:54 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+15:54 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+15:54 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+15:54 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+15:54 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\AWrok\群商品\back\MCSoft\MCSoft.Api" ||  ||end 
+15:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("71"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`CreationTime`, `r`.`CreatorId`, `r`.`DeleterId`, `r`.`DeletionTime`, `r`.`ExtraProperties`, `r`.`Icon`, `r`.`IsDeleted`, `r`.`LastModificationTime`, `r`.`LastModifierId`, `r`.`Name`, `r`.`Order`, `r`.`ParentId`, `r`.`Url`
+FROM `rbac_Menus` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+15:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 174.4426ms 200 text/html;charset=utf-8 ||  ||end 
+15:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 151.8928ms 200 application/json;charset=utf-8 ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("5"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("5"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("12"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+15:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `rbac_Roles` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 POST https://localhost:44346/api/TokenAuth/AuthenticateTest application/json 22 ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)"' ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"AuthenticateTest\", controller = \"TokenAuth\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[MCSoft.Utility.Auth.AuthenticateResultModel] AuthenticateTest(MCSoft.Utility.Auth.TeatAuthenticateInput)" on controller "MCSoft.Api.Controllers.TokenAuthController" ("MCSoft.Api"). ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)" - Validation state: Valid ||  ||end 
+15:55 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:55 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__wxOpenId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`BelongHeadId`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadImg`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`NickName`, `a`.`WxOpenId`
+FROM `app_users` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`WxOpenId` = @__wxOpenId_0)
+LIMIT 1" ||  ||end 
+15:55 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("0"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`CellName`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadStatus`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Location`, `a`.`Name`, `a`.`Phone`, `a`.`Remark`, `a`.`UserId`, `a`.`WxNumber`
+FROM `app_heads` AS `a`
+WHERE @__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)
+LIMIT 1" ||  ||end 
+15:55 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime), @p10='?' (DbType = Guid), @p11='?' (Size = 4000), @p12='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `app_users` (`Id`, `BelongHeadId`, `ConcurrencyStamp`, `CreationTime`, `CreatorId`, `DeleterId`, `DeletionTime`, `ExtraProperties`, `HeadImg`, `LastModificationTime`, `LastModifierId`, `NickName`, `WxOpenId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT `IsDeleted`
+FROM `app_users`
+WHERE ROW_COUNT() = 1 AND `Id` = @p0;" ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2524.442ms. ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing ObjectResult, writing value of type '"MCSoft.Utility.Auth.AuthenticateResultModel"'. ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)" in 2833.5335ms ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.TokenAuthController.AuthenticateTest (MCSoft.Api)"' ||  ||end 
+15:55 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 2931.5676ms 200 application/json; charset=utf-8 ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 POST https://localhost:44346/api/Head/Save application/json-patch+json 141 ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Authorization.DefaultAuthorizationService || Authorization was successful. ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.HeadController.Save (MCSoft.Api)"' ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"Save\", controller = \"Head\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(MCSoft.Application.Dto.Head.HeadSaveDto)" on controller "MCSoft.Api.Controllers.HeadController" ("MCSoft.Api"). ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.HeadController.Save (MCSoft.Api)" - Validation state: Valid ||  ||end 
+15:56 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+15:56 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`CellName`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadStatus`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Location`, `a`.`Name`, `a`.`Phone`, `a`.`Remark`, `a`.`UserId`, `a`.`WxNumber`
+FROM `app_heads` AS `a`
+LEFT JOIN (
+    SELECT `a0`.`Id`, `a0`.`BelongHeadId`, `a0`.`ConcurrencyStamp`, `a0`.`CreationTime`, `a0`.`CreatorId`, `a0`.`DeleterId`, `a0`.`DeletionTime`, `a0`.`ExtraProperties`, `a0`.`HeadImg`, `a0`.`IsDeleted`, `a0`.`LastModificationTime`, `a0`.`LastModifierId`, `a0`.`NickName`, `a0`.`WxOpenId`
+    FROM `app_users` AS `a0`
+    WHERE @__ef_filter__p_1 OR NOT (`a0`.`IsDeleted`)
+) AS `t` ON `a`.`UserId` = `t`.`Id`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`t`.`Id` = @__userId_0)
+LIMIT 1" ||  ||end 
+15:56 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`BelongHeadId`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadImg`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`NickName`, `a`.`WxOpenId`
+FROM `app_users` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__userId_0)
+LIMIT 2" ||  ||end 
+15:56 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("21"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime), @p10='?' (DbType = Guid), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Guid), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `app_heads` (`Id`, `CellName`, `ConcurrencyStamp`, `CreationTime`, `CreatorId`, `DeleterId`, `DeletionTime`, `ExtraProperties`, `HeadStatus`, `LastModificationTime`, `LastModifierId`, `Location`, `Name`, `Phone`, `Remark`, `UserId`, `WxNumber`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+SELECT `IsDeleted`
+FROM `app_heads`
+WHERE ROW_COUNT() = 1 AND `Id` = @p0;" ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "MCSoft.Api.Controllers.HeadController.Save (MCSoft.Api)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 171.6706ms. ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor || Executing JsonResult, writing value of type '"MCSoft.Infrastructure.Result.ResultBase"'. ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.HeadController.Save (MCSoft.Api)" in 277.949ms ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.HeadController.Save (MCSoft.Api)"' ||  ||end 
+15:56 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 327.7769ms 200 application/json; charset=utf-8 ||  ||end 
+16:42 || Information ||  || Starting web host. ||  ||end 
+16:42 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:42 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+16:43 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+16:43 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+16:43 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\AWrok\群商品\back\MCSoft\MCSoft.Api" ||  ||end 
+16:43 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("95"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`CreationTime`, `r`.`CreatorId`, `r`.`DeleterId`, `r`.`DeletionTime`, `r`.`ExtraProperties`, `r`.`Icon`, `r`.`IsDeleted`, `r`.`LastModificationTime`, `r`.`LastModifierId`, `r`.`Name`, `r`.`Order`, `r`.`ParentId`, `r`.`Url`
+FROM `rbac_Menus` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+16:43 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 328.4037ms 200 text/html;charset=utf-8 ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("42"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("10"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("33"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("4"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:43 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("25"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `rbac_Roles` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+16:43 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+16:43 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 463.4343ms 200 application/json;charset=utf-8 ||  ||end 
+16:53 || Information ||  || Starting web host. ||  ||end 
+16:53 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:53 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+16:53 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+16:53 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+16:53 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\AWrok\群商品\back\MCSoft\MCSoft.Api" ||  ||end 
+16:53 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("81"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`CreationTime`, `r`.`CreatorId`, `r`.`DeleterId`, `r`.`DeletionTime`, `r`.`ExtraProperties`, `r`.`Icon`, `r`.`IsDeleted`, `r`.`LastModificationTime`, `r`.`LastModifierId`, `r`.`Name`, `r`.`Order`, `r`.`ParentId`, `r`.`Url`
+FROM `rbac_Menus` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+16:53 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 182.4135ms 200 text/html;charset=utf-8 ||  ||end 
+16:53 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("8"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:53 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 253.6214ms 200 application/json;charset=utf-8 ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("6"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("10"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("10"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("10"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+16:53 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `rbac_Roles` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 13.2577ms 200 text/html;charset=utf-8 ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/favicon-32x32.png   ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 80.6303ms 200 application/json;charset=utf-8 ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 74.2632ms 200 image/png ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 POST https://localhost:44346/api/Product/Save application/json-patch+json 144 ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Authorization.DefaultAuthorizationService || Authorization was successful. ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.ProductController.Save (MCSoft.Api)"' ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"Save\", controller = \"Product\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(MCSoft.Application.Dto.Product.ProductSaveDto)" on controller "MCSoft.Api.Controllers.ProductController" ("MCSoft.Api"). ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.ProductController.Save (MCSoft.Api)" - Validation state: Valid ||  ||end 
+16:54 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:54 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Guid), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime), @p14='?' (DbType = Guid), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `app_products` (`Id`, `ConcurrencyStamp`, `ContentImg`, `CoverImg`, `CreationTime`, `CreatorId`, `DeleterId`, `DeletionTime`, `Details`, `ExtraProperties`, `HeadId`, `IsEnable`, `Label`, `LastModificationTime`, `LastModifierId`, `Name`, `Notice`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `IsDeleted`
+FROM `app_products`
+WHERE ROW_COUNT() = 1 AND `Id` = @p0;" ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "MCSoft.Api.Controllers.ProductController.Save (MCSoft.Api)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 134.5515ms. ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor || Executing JsonResult, writing value of type '"MCSoft.Infrastructure.Result.ResultBase"'. ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.ProductController.Save (MCSoft.Api)" in 408.17ms ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.ProductController.Save (MCSoft.Api)"' ||  ||end 
+16:54 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 519.5418ms 200 application/json; charset=utf-8 ||  ||end 
+17:01 || Information ||  || Starting web host. ||  ||end 
+17:01 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+17:01 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+17:01 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+17:01 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+17:01 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\AWrok\群商品\back\MCSoft\MCSoft.Api" ||  ||end 
+17:01 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("54"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`CreationTime`, `r`.`CreatorId`, `r`.`DeleterId`, `r`.`DeletionTime`, `r`.`ExtraProperties`, `r`.`Icon`, `r`.`IsDeleted`, `r`.`LastModificationTime`, `r`.`LastModifierId`, `r`.`Name`, `r`.`Order`, `r`.`ParentId`, `r`.`Url`
+FROM `rbac_Menus` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+17:01 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 338.6972ms 200 text/html;charset=utf-8 ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("10"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("13"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:01 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:01 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `rbac_Roles` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+17:01 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 271.0681ms 200 application/json;charset=utf-8 ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 POST https://localhost:44346/api/Product/Search application/json-patch+json 80 ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Authorization.DefaultAuthorizationService || Authorization was successful. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.ProductController.Search (MCSoft.Api)"' ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"Search\", controller = \"Product\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[MCSoft.Infrastructure.Result.Result`1[Volo.Abp.Application.Dtos.PagedResultDto`1[MCSoft.Application.Dto.Product.SmallProductDto]]] Search(MCSoft.Application.SearchInput)" on controller "MCSoft.Api.Controllers.ProductController" ("MCSoft.Api"). ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.ProductController.Search (MCSoft.Api)" - Validation state: Valid ||  ||end 
+17:02 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:02 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `app_products` AS `a`
+WHERE @__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)" ||  ||end 
+17:02 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("8"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`ContentImg`, `a`.`CoverImg`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`Details`, `a`.`ExtraProperties`, `a`.`HeadId`, `a`.`IsDeleted`, `a`.`IsEnable`, `a`.`Label`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`, `a`.`Notice`, `a`.`Price`
+FROM `app_products` AS `a`
+WHERE @__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)
+ORDER BY `a`.`CreationTime` DESC
+LIMIT @__p_1 OFFSET @__p_0" ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "MCSoft.Api.Controllers.ProductController.Search (MCSoft.Api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 99.5889ms. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing ObjectResult, writing value of type '"MCSoft.Infrastructure.Result.Result`1[[Volo.Abp.Application.Dtos.PagedResultDto`1[[MCSoft.Application.Dto.Product.SmallProductDto, MCSoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Volo.Abp.Ddd.Application.Contracts, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]"'. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.ProductController.Search (MCSoft.Api)" in 410.9175ms ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.ProductController.Search (MCSoft.Api)"' ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 546.2283ms 200 application/json; charset=utf-8 ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/api/Product/Get?productId=0cf0ed20-fc49-6cbe-f2bf-39f4b345960d   ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Authorization.DefaultAuthorizationService || Authorization was successful. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.ProductController.Get (MCSoft.Api)"' ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"Get\", controller = \"Product\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[MCSoft.Infrastructure.Result.Result`1[MCSoft.Application.Dto.Product.ProductDto]] Get(System.Guid)" on controller "MCSoft.Api.Controllers.ProductController" ("MCSoft.Api"). ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.ProductController.Get (MCSoft.Api)" - Validation state: Valid ||  ||end 
+17:02 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:02 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`ContentImg`, `a`.`CoverImg`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`Details`, `a`.`ExtraProperties`, `a`.`HeadId`, `a`.`IsDeleted`, `a`.`IsEnable`, `a`.`Label`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`, `a`.`Notice`, `a`.`Price`
+FROM `app_products` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+LIMIT 1" ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "MCSoft.Api.Controllers.ProductController.Get (MCSoft.Api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 77.0169ms. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing ObjectResult, writing value of type '"MCSoft.Infrastructure.Result.Result`1[[MCSoft.Application.Dto.Product.ProductDto, MCSoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.ProductController.Get (MCSoft.Api)" in 116.0677ms ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.ProductController.Get (MCSoft.Api)"' ||  ||end 
+17:02 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 124.499ms 200 application/json; charset=utf-8 ||  ||end 
+17:07 || Information ||  || Starting web host. ||  ||end 
+17:07 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+17:07 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+17:07 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+17:07 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+17:07 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\AWrok\群商品\back\MCSoft\MCSoft.Api" ||  ||end 
+17:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html   ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("77"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`CreationTime`, `r`.`CreatorId`, `r`.`DeleterId`, `r`.`DeletionTime`, `r`.`ExtraProperties`, `r`.`Icon`, `r`.`IsDeleted`, `r`.`LastModificationTime`, `r`.`LastModifierId`, `r`.`Name`, `r`.`Order`, `r`.`ParentId`, `r`.`Url`
+FROM `rbac_Menus` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+17:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 182.0604ms 200 text/html;charset=utf-8 ||  ||end 
+17:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json   ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("8"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 270.8833ms 200 application/json;charset=utf-8 ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("17"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("8"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("2"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("14"ms) [Parameters=["@p14='?' (DbType = Guid), @p0='?' (Size = 4000), @p15='?' (Size = 4000), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE `rbac_Menus` SET `ConcurrencyStamp` = @p0, `CreationTime` = @p1, `CreatorId` = @p2, `DeleterId` = @p3, `DeletionTime` = @p4, `ExtraProperties` = @p5, `Icon` = @p6, `IsDeleted` = @p7, `LastModificationTime` = @p8, `LastModifierId` = @p9, `Name` = @p10, `Order` = @p11, `ParentId` = @p12, `Url` = @p13
+WHERE `Id` = @p14 AND `ConcurrencyStamp` = @p15;
+SELECT ROW_COUNT();" ||  ||end 
+17:07 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `rbac_Roles` AS `r`
+WHERE @__ef_filter__p_0 OR NOT (`r`.`IsDeleted`)" ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/api/User/CurrentHead   ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Authorization.DefaultAuthorizationService || Authorization was successful. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)"' ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"CurrentHead\", controller = \"User\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[MCSoft.Infrastructure.Result.Result`1[MCSoft.Application.Dto.Head.HeadDto]] CurrentHead()" on controller "MCSoft.Api.Controllers.UserController" ("MCSoft.Api"). ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)" - Validation state: Valid ||  ||end 
+17:08 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:08 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`BelongHeadId`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadImg`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`NickName`, `a`.`WxOpenId`
+FROM `app_users` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+LIMIT 1" ||  ||end 
+17:08 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`CellName`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadStatus`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Location`, `a`.`Name`, `a`.`Phone`, `a`.`Remark`, `a`.`UserId`, `a`.`WxNumber`
+FROM `app_heads` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+LIMIT 1" ||  ||end 
+17:08 || Error || Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter || ---------- RemoteServiceErrorInfo ---------- ||  ||end 
+17:08 || Error || Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter || {
+  "code": null,
+  "message": "There is no entity Head with id = b8acfe5e-e115-49da-b23a-65fffadaa592!",
+  "details": null,
+  "validationErrors": null
+} ||  ||end 
+17:08 || Error || Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter || There is no such an entity. Entity type: MCSoft.Domain.Models.Head, id: b8acfe5e-e115-49da-b23a-65fffadaa592 || Volo.Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: MCSoft.Domain.Models.Head, id: b8acfe5e-e115-49da-b23a-65fffadaa592
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`3.GetAsync(TKey id, Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MCSoft.Domain.Service.UserService.CurrentHead() in E:\AWrok\群商品\back\MCSoft\MCSoft.Domain\DService\UserService.cs:line 45
+   at MCSoft.Application.Service.UserAppService.CurrentHead() in E:\AWrok\群商品\back\MCSoft\MCSoft.Application\Service\UserAppService.cs:line 54
+   at MCSoft.Api.Controllers.UserController.CurrentHead() in E:\AWrok\群商品\back\MCSoft\MCSoft.Api\Controllers\UserController.cs:line 40
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing ObjectResult, writing value of type '"Volo.Abp.Http.RemoteServiceErrorResponse"'. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)" in 1962.402ms ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)"' ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 2053.2801ms 404 application/json; charset=utf-8 ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2.0 GET https://localhost:44346/api/User/CurrentHead   ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler || Successfully validated the token. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Authorization.DefaultAuthorizationService || Authorization was successful. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)"' ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"CurrentHead\", controller = \"User\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[MCSoft.Infrastructure.Result.Result`1[MCSoft.Application.Dto.Head.HeadDto]] CurrentHead()" on controller "MCSoft.Api.Controllers.UserController" ("MCSoft.Api"). ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)" - Validation state: Valid ||  ||end 
+17:08 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+17:08 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("8"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`BelongHeadId`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadImg`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`NickName`, `a`.`WxOpenId`
+FROM `app_users` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+LIMIT 1" ||  ||end 
+17:08 || Information || Microsoft.EntityFrameworkCore.Database.Command || Executed DbCommand ("1"ms) [Parameters=["@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`CellName`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`HeadStatus`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Location`, `a`.`Name`, `a`.`Phone`, `a`.`Remark`, `a`.`UserId`, `a`.`WxNumber`
+FROM `app_heads` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+LIMIT 1" ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 73.7121ms. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing ObjectResult, writing value of type '"MCSoft.Infrastructure.Result.Result`1[[MCSoft.Application.Dto.Head.HeadDto, MCSoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)" in 134.9766ms ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"MCSoft.Api.Controllers.UserController.CurrentHead (MCSoft.Api)"' ||  ||end 
+17:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 144.5589ms 200 application/json; charset=utf-8 ||  ||end 

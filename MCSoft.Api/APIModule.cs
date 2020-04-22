@@ -1,6 +1,5 @@
 ﻿using MCSoft.Application;
 using MCSoft.Infrastructure;
-using MCSoft.Utility.Auth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.ReDoc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -51,12 +51,19 @@ namespace MCSoft.Api
 
         private void ConfigureSwaggerServices(IServiceCollection services)
         {
+            var path = System.IO.Directory.GetCurrentDirectory();
             services.AddSwaggerGen(
                 options =>
                 {
                     options.SwaggerDoc("v1", new OpenApiInfo { Title = "MCSoft API", Version = "v1" });
                     options.DocInclusionPredicate((docName, description) => true);
                     options.CustomSchemaIds(type => type.FullName);
+
+                    var xmlPath = Path.Combine(path, "MCSoft.Api.xml");
+                    options.IncludeXmlComments(xmlPath, true); //默认的第二个参数是false，这个是controller的注释，记得修改
+
+                    xmlPath = Path.Combine(path, "MCSoft.Application.xml");
+                    options.IncludeXmlComments(xmlPath); //默认的第二个参数是false，这个是controller的注释，记得修改
 
                     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
                     {
@@ -118,18 +125,6 @@ namespace MCSoft.Api
             });
         }
 
-        //private void ConfigureTokenAuth(ServiceConfigurationContext context)
-        //{
-        //    context.Services.OnRegistred<TokenAuthConfiguration>();
-        //    var tokenAuthConfig = IocManager.Resolve<TokenAuthConfiguration>();
-
-        //    tokenAuthConfig.SecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_appConfiguration["Authentication:JwtBearer:SecurityKey"]));
-        //    tokenAuthConfig.Issuer = _appConfiguration["Authentication:JwtBearer:Issuer"];
-        //    tokenAuthConfig.Audience = _appConfiguration["Authentication:JwtBearer:Audience"];
-        //    tokenAuthConfig.SigningCredentials = new SigningCredentials(tokenAuthConfig.SecurityKey, SecurityAlgorithms.HmacSha256);
-        //    var expirationDays = double.Parse(_appConfiguration["Authentication:JwtBearer:ExpirationDays"]);
-        //    tokenAuthConfig.Expiration = TimeSpan.FromDays(expirationDays);
-        //}
 
     }
 }
