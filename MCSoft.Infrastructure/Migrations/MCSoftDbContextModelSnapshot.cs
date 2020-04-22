@@ -125,6 +125,9 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("char(36)");
+
                     b.HasKey("Id");
 
                     b.ToTable("app_categorys");
@@ -341,7 +344,7 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(11, 2)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -413,8 +416,8 @@ namespace MCSoft.Infrastructure.Migrations
                     b.Property<int>("Count")
                         .HasColumnType("int");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(11, 2)");
 
                     b.HasKey("OrderId", "ProductId");
 
@@ -469,6 +472,12 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnType("tinyint(1)")
                         .HasDefaultValue(false);
 
+                    b.Property<bool>("IsEnable")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Label")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<DateTime?>("LastModificationTime")
                         .HasColumnName("LastModificationTime")
                         .HasColumnType("datetime(6)");
@@ -484,10 +493,10 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<decimal>("OldPrice")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(11, 2)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(11, 2)");
 
                     b.Property<uint>("SaleCounts")
                         .HasColumnType("int unsigned");
@@ -497,6 +506,9 @@ namespace MCSoft.Infrastructure.Migrations
 
                     b.Property<uint>("Stock")
                         .HasColumnType("int unsigned");
+
+                    b.Property<Guid?>("TwoCategoryId")
+                        .HasColumnType("char(36)");
 
                     b.HasKey("Id");
 

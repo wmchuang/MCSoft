@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using MCSoft.Application.Dto;
+using MCSoft.Application.Dto.Category;
+using MCSoft.Application.Dto.Product;
 using MCSoft.Domain;
 using MCSoft.Domain.Models;
 using System;
@@ -16,8 +18,8 @@ namespace MCSoft.Application
              * Alternatively, you can split your mapping configurations
              * into multiple profile classes for a better organization. */
 
+            #region RBAC
             CreateMap<Person, PersonDto>().ReverseMap();
-
             CreateMap<Phone, PhoneDto>().ReverseMap();
 
             CreateMap<Manager, ManagerDto>().ReverseMap();
@@ -28,6 +30,20 @@ namespace MCSoft.Application
 
             CreateMap<Role, RoleDto>().ReverseMap();
             CreateMap<RoleUpdateDto, Role>();
+
+            #endregion
+
+            CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<CategorySaveDto, CategoryDto>();
+            CreateMap<CategorySaveDto, CategoryUpdateDto>();
+            CreateMap<CategoryUpdateDto, Category>();
+
+
+            CreateMap<Product, ProductDto>().ReverseMap();
+            CreateMap<ProductSaveDto, ProductDto>();
+            CreateMap<ProductSaveDto, ProductUpdateDto>();
+            CreateMap<ProductUpdateDto, Product>();
+
         }
     }
 }

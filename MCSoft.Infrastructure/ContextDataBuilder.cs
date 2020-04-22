@@ -13,15 +13,38 @@ namespace MCSoft.Infrastructure
     public class ContextDataBuilder : ITransientDependency
     {
         private readonly IRepository<Menu, Guid> _repository;
+        private readonly IRepository<Role, Guid> _roleRepository;
+        private readonly IRepository<Manager, Guid> _managerRepository;
+        private readonly IRepository<ManagerRole> _managerRoleRepository;
 
-        public ContextDataBuilder(IRepository<Menu, Guid> repository)
+        public ContextDataBuilder(IRepository<Menu, Guid> repository, IRepository<Role, Guid> roleRepository, IRepository<Manager, Guid> managerRepository, IRepository<ManagerRole> managerRoleRepository)
         {
             _repository = repository;
+            _roleRepository = roleRepository;
+            _managerRepository = managerRepository;
+            _managerRoleRepository = managerRoleRepository;
         }
 
         public async void Build()
         {
             await InitMenusAsync();
+            await InitRoleAsync();
+        }
+
+        private async Task InitRoleAsync()
+        {
+            if (await _roleRepository.GetCountAsync() == 0)
+            {
+                var role = await _roleRepository.InsertAsync(new Role
+                {
+                    Name = "超级管理员",
+                    Description = "权限最大,拥有所有权限"
+                });
+
+                var manager = await _managerRepository.InsertAsync(new Manager(Guid.NewGuid(), "admin", "123456", ""));
+
+                await _managerRoleRepository.InsertAsync(ManagerRole.CreateManagerRole(manager, role));
+            }
         }
 
         private async Task InitMenusAsync()

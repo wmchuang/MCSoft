@@ -32,15 +32,15 @@ namespace MCSoft.Domain.Models
         }
 
 
-        public void Disable()
-        {
-            this.IsDisabled = true;
-        }
+        //public void Disable()
+        //{
+        //    this.IsDisabled = true;
+        //}
 
-        public void Enable()
-        {
-            this.IsDisabled = false;
-        }
+        //public void Enable()
+        //{
+        //    this.IsDisabled = false;
+        //}
 
         public bool VerifyPassword(string password)
         {

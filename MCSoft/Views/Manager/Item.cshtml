@@ -120,8 +120,8 @@
             form.on('submit(add)',
                 function (data) {
                     var field = data.field;
+                    var arr = new Array();
 
-                      var arr = new Array();
                     $("input:checkbox[name='role']:checked").each(function(i){
                         arr[i] = $(this).val();
                     })

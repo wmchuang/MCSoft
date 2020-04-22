@@ -85,6 +85,8 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
             builder.Entity<Product>(b =>
             {
                 b.ToTable(MCSoftConsts.DbTablePrefix + "products", MCSoftConsts.DbSchema);
+                b.Property(x => x.Price).HasColumnType("decimal(11, 2)");
+                b.Property(x => x.OldPrice).HasColumnType("decimal(11, 2)");
                 b.ConfigureByConvention();
             });
 
@@ -100,6 +102,7 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
                 b.OwnsOne(o => o.Address, a => {
                     a.WithOwner();
                 });
+                b.Property(x => x.Amount).HasColumnType("decimal(11, 2)");
                 b.ConfigureByConvention();
             });
 
@@ -107,6 +110,7 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
             {
                 b.ToTable(MCSoftConsts.DbTablePrefix + "orderitems", MCSoftConsts.DbSchema);
                 b.HasKey(x => new { x.OrderId, x.ProductId });
+                b.Property(x => x.Price).HasColumnType("decimal(11, 2)");
                 b.ConfigureByConvention();
             });
             #endregion
