@@ -23,6 +23,12 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:MCSoft.Api.Controllers.HeadController.Get">
+            <summary>
+            获取我的店铺
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:MCSoft.Api.Controllers.ProductController">
             <summary>
             商品

@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section styles
+{
+    <link href="~/css/dropdown.css" rel="stylesheet" />
+}
+
+
+
+<div class="x-nav">
+    <span class="layui-breadcrumb">
+        @*<a href="">首页</a>
+            <a href="">演示</a>*@
+        <a>
+            <cite></cite>
+        </a>
+    </span>
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+        <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+    </a>
+
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-inline layui-show-xs-block">
+                        <input type="text" id="keyword" name="keyword" placeholder="请输入名称进行搜索" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-inline layui-show-xs-block">
+                        <button class="layui-btn  handle" data-type="reload"><i class="layui-icon">&#xe615;</i></button>
+                    </div>
+                </div>
+                @*<div class="layui-card-header">
+                    <button class="layui-btn" onclick="xadmin.open('添加', '@Url.Action("Item")', '','',true)"><i class="layui-icon"></i>添加</button>
+                </div>*@
+                <div class="layui-card-body ">
+                    <table class="layui-hide" id="MC_table" lay-filter="testReload"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+
+
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
+
+
+    <script>
+        layui.config({
+            base: "/lib/layui/lay/modules/"
+            }).use(['dropdown', 'table', 'layer'], function () {
+              var table = layui.table;
+            var dropdown = layui.dropdown;
+            var layer = layui.layer;
+
+
+           var tableData;
+            //方法级渲染
+                table.render({
+                    elem: '#MC_table'
+                    , url: '@Url.Action("Search")'
+                    , cols: [[
+                        { checkbox: true, fixed: true }
+                        , { field: 'id', title: 'ID', sort: true, fixed: true }
+                        , { field: 'user.nickName', title: '用户', templet: function (d) {
+                            return d.user.nickName
+                        } }
+                        , {
+                            field: 'head.name', title: '商家', templet: function (d) {
+                                return d.head.name
+                        } }
+                        , { field: 'content', title: '评价内容' }
+
+                        , { field: 'creationTime', title: '创建时间', sort: true }
+                        , { title: '操作', fixed: 'right', width: 150, align: 'center', toolbar: '#barDemo' }
+                    ]]
+                    , id: 'testReload'
+                    , page: true
+                    , height: 'full-200'
+
+                });
+
+                //监听工具条
+                table.on('tool(testReload)', function (obj) {
+                    var data = obj.data;
+                    console.info(data);
+                    if (obj.event === 'del') {
+                        layer.confirm('真的删除行么', function (index) {
+                            var dto = {
+                                "id": data.id
+                            };
+                            $.ajax({
+                                 url: '@Url.Action("Delete")?' + jQuery.param(dto),
+                                 type: 'Get',
+                                 success: function (data) {
+                                     obj.del();
+                                     layer.close(index);
+                                 }
+                            });
+                        });
+                    }
+                });
+
+           var $ = layui.$, active = {
+                reload: function () {
+                    var keyword = $('#keyword').val();
+                    //执行重载
+                    table.reload('testReload', {
+                        page: {
+                            curr: 1 //重新从第 1 页开始
+                        },
+                        where: {
+                            Keyword: keyword,
+                        }
+                    });
+                }
+            };
+
+            $('.handle').on('click', function () {
+                var type = $(this).data('type');
+                active[type] ? active[type].call(this) : '';
+            });
+            });
+
+
+
+    </script>
+}
+

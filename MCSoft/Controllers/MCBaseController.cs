@@ -6,12 +6,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 
-namespace MCSoft.Api.Controllers
+namespace MCSoft.Controllers
 {
     [Authorize]
-    [ApiController]
-    [Route("api/[controller]/[action]")]
-    public class MCApiBaseController : AbpController
+    public class MCBaseController : AbpController
     {
 
     }

@@ -22,9 +22,9 @@ namespace MCSoft.Application.Service
         private ICurrentUser _currentUser { get; }
 
         private readonly IHeadRepository _headRepository;
-        private readonly IRepository<User> _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public HeadAppService(IRepository<Head, Guid> repository, ICurrentUser currentUser, IHeadRepository headRepository, IRepository<User> userRepository)
+        public HeadAppService(IRepository<Head, Guid> repository, ICurrentUser currentUser, IHeadRepository headRepository, IUserRepository userRepository)
          : base(repository)
         {
             _currentUser = currentUser;
@@ -98,6 +98,15 @@ namespace MCSoft.Application.Service
         public async Task ChangeStatus(Guid headId, Status status)
         {
             await _headRepository.ChangeStatus(headId, status);
+        }
+
+        public async Task<HeadDto> GetAsync()
+        {
+            var headId = _currentUser.Id.Value;
+            var head = await _headRepository.GetIncludeAsync(headId);
+            var headDto = ObjectMapper.Map<Head, HeadDto>(head);
+            headDto.FansCount = _userRepository.GetHeadFansCount(headId);
+            return headDto;
         }
     }
 }

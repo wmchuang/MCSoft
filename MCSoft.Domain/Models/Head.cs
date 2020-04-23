@@ -32,6 +32,8 @@ namespace MCSoft.Domain.Models
         public Status HeadStatus { get; set; } = Status.Enable;
 
 
+        public int BrowseCount { get; set; } = 0;
+
         public virtual User User { get; set; }
     }
 
@@ -51,6 +53,11 @@ namespace MCSoft.Domain.Models
         public void ChangeStatus(Status headStatus)
         {
             this.HeadStatus = headStatus;
+        }
+
+        public void AddBrowseCount()
+        {
+            this.BrowseCount += 1;
         }
     }
 }

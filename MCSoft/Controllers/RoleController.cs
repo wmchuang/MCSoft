@@ -13,7 +13,7 @@ using Volo.Abp.AspNetCore.Mvc;
 
 namespace MCSoft.Controllers
 {
-    public class RoleController : AbpController
+    public class RoleController : MCBaseController
     {
         private readonly RoleAppService _roleAppService;
         public RoleController(RoleAppService roleAppService)

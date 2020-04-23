@@ -2,6 +2,7 @@
 using MCSoft.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using Volo.Abp.Application.Dtos;
 
@@ -28,6 +29,11 @@ namespace MCSoft.Application.Dto.Head
         public string Location { get; set; }
 
         public Status HeadStatus { get; set; }
+
+        public int BrowseCount { get; set; }
+
+        [NotMapped]
+        public int FansCount { get; set; }
 
         public UserSimpleDto UserDto { get; set; }
     }

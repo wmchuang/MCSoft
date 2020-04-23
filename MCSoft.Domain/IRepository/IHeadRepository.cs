@@ -10,5 +10,7 @@ namespace MCSoft.Domain.IRepository
     public interface IHeadRepository : IRepository<Head, Guid>
     {
         Task ChangeStatus(Guid headId, Status status);
+
+        Task<Head> GetIncludeAsync(Guid headId);
     }
 }

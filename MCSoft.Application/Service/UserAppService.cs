@@ -3,10 +3,13 @@ using MCSoft.Application.Dto.User;
 using MCSoft.Domain.IRepository;
 using MCSoft.Domain.Models;
 using MCSoft.Domain.Service;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
 namespace MCSoft.Application.Service
@@ -53,6 +56,33 @@ namespace MCSoft.Application.Service
         {
             var head = await _userService.CurrentHead();
             return ObjectMapper.Map<Head, HeadDto>(head);
+        }
+
+        public async Task<PagedResultDto<UserDto>> Search(SearchInput dto)
+        {
+            try
+            {
+                var repository = _userRepository.WhereIf(!string.IsNullOrWhiteSpace(dto.Keyword), x => x.NickName.Contains(dto.Keyword));
+
+                var count = await repository.CountAsync();
+
+                var list = await repository
+                    .OrderByDescending(g => g.CreationTime)
+                    .PageBy(dto)
+                    .ToListAsync();
+
+                var items = ObjectMapper.Map<List<User>, List<UserDto>>(list);
+
+                return new PagedResultDto<UserDto>
+                {
+                    TotalCount = count,
+                    Items = items
+                };
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }

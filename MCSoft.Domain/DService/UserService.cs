@@ -15,10 +15,10 @@ namespace MCSoft.Domain.Service
     {
         #region Ctor
         private readonly IRepository<User, Guid> _userRepository;
-        private readonly IRepository<Head, Guid> _headRepository;
+        private readonly IHeadRepository _headRepository;
 
         protected ICurrentUser _currentUser { get; }
-        public UserService(IRepository<User, Guid> userRepository, IRepository<Head, Guid> headRepository, ICurrentUser currentUser)
+        public UserService(IRepository<User, Guid> userRepository, IHeadRepository headRepository, ICurrentUser currentUser)
         {
 
             _userRepository = userRepository;
@@ -42,7 +42,9 @@ namespace MCSoft.Domain.Service
             var userId = _currentUser.Id.Value;
             var user = await _userRepository.GetAsync(userId);
 
-            return await _headRepository.GetAsync(user.BelongHeadId.Value);
+            var head = await _headRepository.GetIncludeAsync(user.BelongHeadId.Value);
+            head.AddBrowseCount();
+            return head;
         }
 
     }

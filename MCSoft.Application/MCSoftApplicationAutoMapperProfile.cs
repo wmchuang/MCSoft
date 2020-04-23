@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MCSoft.Application.Dto;
+using MCSoft.Application.Dto.Evaluate;
 using MCSoft.Application.Dto.Head;
 using MCSoft.Application.Dto.Product;
 using MCSoft.Application.Dto.User;
@@ -41,12 +42,15 @@ namespace MCSoft.Application
             CreateMap<HeadSaveDto, HeadDto>();
             CreateMap<HeadSaveDto, HeadUpdateDto>();
             CreateMap<HeadUpdateDto, Head>();
+            CreateMap<Head, HeadSimpleDto>();
 
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<ProductSaveDto, ProductDto>();
             CreateMap<ProductSaveDto, ProductUpdateDto>();
             CreateMap<ProductUpdateDto, Product>();
             CreateMap<Product, SmallProductDto>();
+
+            CreateMap<Evaluate, EvaluateDto>();
 
         }
     }

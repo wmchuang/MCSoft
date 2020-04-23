@@ -10,5 +10,7 @@ namespace MCSoft.Domain.IRepository
         Task<User> Authorize(string wxOpenId, Guid? headId);
 
         Task<User> wxAuthorize(string nickName, string headImg);
+
+        int GetHeadFansCount(Guid headId);
     }
 }

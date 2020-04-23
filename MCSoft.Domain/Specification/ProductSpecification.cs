@@ -30,7 +30,7 @@ namespace MCSoft.Domain.Specification
             {
                 exp = exp.And(x => x.Name.Contains(Name));
             }
-            if (HeadId.HasValue)
+            if (HeadId.HasValue && HeadId.Value != Guid.Empty)
             {
                 exp = exp.And(x => x.HeadId == HeadId);
             }

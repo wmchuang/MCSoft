@@ -41,12 +41,12 @@ namespace MCSoft
             app.UseAuthorization(); //身份授权
 
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapDefaultControllerRoute();
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapDefaultControllerRoute();
+            //});
 
-            //app.UseMvcWithDefaultRouteAndArea();
+            app.UseMvcWithDefaultRouteAndArea();
             //app.UseMvc(routes =>
             //{
             //    routes.MapRoute(

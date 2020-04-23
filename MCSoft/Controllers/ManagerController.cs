@@ -14,7 +14,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace MCSoft.Controllers
 {
-    public class ManagerController : AbpController
+    public class ManagerController : MCBaseController
     {
         private readonly ManagerAppService _managerAppService;
         private readonly RoleAppService _roleAppService;

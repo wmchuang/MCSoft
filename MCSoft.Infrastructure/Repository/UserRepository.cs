@@ -86,5 +86,15 @@ namespace MCSoft.Infrastructure.Repository
             var userId = _currentUser.Id.Value;
             return DbContext.Users.First(x => x.Id == userId);
         }
+
+        /// <summary>
+        /// 获取粉丝量
+        /// </summary>
+        /// <param name="headId"></param>
+        /// <returns></returns>
+        public int GetHeadFansCount(Guid headId)
+        {
+            return DbContext.Users.Count(x => x.BelongHeadId == headId);
+        }
     }
 }

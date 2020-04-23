@@ -31,5 +31,20 @@ namespace MCSoft.Api.Controllers
             await _headAppService.SaveAsync(dto);
             return Json(ResultBase.Success());
         }
+
+
+        /// <summary>
+        /// 获取我的店铺
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<Result<HeadDto>> Get()
+        {
+            var result = new Result<HeadDto>
+            {
+                data = await _headAppService.GetAsync()
+            };
+            return result;
+        }
     }
 }

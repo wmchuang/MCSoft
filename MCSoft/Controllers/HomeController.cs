@@ -10,7 +10,7 @@ using Volo.Abp.AspNetCore.Mvc;
 
 namespace MCSoft.Controllers
 {
-    public class HomeController : AbpController
+    public class HomeController : MCBaseController
     {
         private readonly ILogger<HomeController> _logger;
 

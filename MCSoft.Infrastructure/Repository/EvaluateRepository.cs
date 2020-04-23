@@ -14,26 +14,19 @@ using Volo.Abp.Users;
 
 namespace MCSoft.Infrastructure.Repository
 {
-    public class HeadRepository : EfCoreRepository<MCSoftDbContext, Head, Guid>, IHeadRepository
+    public class EvaluateRepository : EfCoreRepository<MCSoftDbContext, Evaluate, Guid>, IEvaluateRepository
     {
         private ICurrentUser _currentUser { get; }
 
-        public HeadRepository(IDbContextProvider<MCSoftDbContext> dbContextProvider, ICurrentUser currentUser)
+        public EvaluateRepository(IDbContextProvider<MCSoftDbContext> dbContextProvider, ICurrentUser currentUser)
     : base(dbContextProvider)
         {
             _currentUser = currentUser;
         }
 
-        public async Task ChangeStatus(Guid headId, Status status)
+        public IQueryable<Evaluate> QueryInclude()
         {
-            var head = await DbContext.Heads.SingleAsync(x => x.Id == headId);
-            head.ChangeStatus(status);
-            await DbContext.SaveChangesAsync();
-        }
-
-        public async Task<Head> GetIncludeAsync(Guid headId)
-        {
-            return await DbContext.Heads.Include(x => x.User).SingleAsync(x => x.Id == headId);
+            return DbContext.Evaluates.Include(x => x.Head).Include(x => x.User);
         }
     }
 }

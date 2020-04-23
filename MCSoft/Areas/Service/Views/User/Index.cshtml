@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section styles
+{
+    <style type="text/css">
+        tbody .layui-table-cell {
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+}
+
+
+
+<div class="x-nav">
+    <span class="layui-breadcrumb">
+        <a>
+            <cite></cite>
+        </a>
+    </span>
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+        <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+    </a>
+
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-inline layui-show-xs-block">
+                        <input type="text" id="keyword" name="keyword" placeholder="请输入名称进行搜索" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-inline layui-show-xs-block">
+                        <button class="layui-btn  handle" data-type="reload"><i class="layui-icon">&#xe615;</i></button>
+                    </div>
+                </div>
+                @*<div class="layui-card-header">
+                    <button class="layui-btn" onclick="xadmin.open('添加', '@Url.Action("Item")', '','',true)"><i class="layui-icon"></i>添加</button>
+                </div>*@
+                <div class="layui-card-body ">
+                    <table class="layui-hide" id="MC_table" lay-filter="testReload"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script type="text/html" id="imgtemp">
+        <div><img src="{{d.headImg}}" style="width:50px;height:50px"></div>
+    </script>
+
+    <script type="text/html" id="barDemo">
+      
+    </script>
+
+
+    <script>
+        layui.use([ 'table', 'layer'], function () {
+            var table = layui.table;
+            var layer = layui.layer;
+
+            //方法级渲染
+                table.render({
+                    elem: '#MC_table'
+                    , url: '@Url.Action("Search")'
+                    , cols: [[
+                        { checkbox: true, fixed: true }
+                        , { field: 'id', title: 'ID', sort: true, fixed: true }
+                        , { field: 'wxOpenId', title: 'openId', }
+                        , { field: 'nickName', title: '昵称', }
+                        , { field: '头像', title: '头像', templet: "#imgtemp" }
+                        , { field: 'creationTime', title: '创建时间', sort: true }
+                        //, { title: '操作',fixed: 'right', align: 'center', toolbar: '#barDemo' }
+                    ]]
+                    , id: 'testReload'
+                    , page: true
+                    , height: 'full-200'
+
+                });
+
+           var $ = layui.$, active = {
+                reload: function () {
+                    var keyword = $('#keyword').val();
+                    //执行重载
+                    table.reload('testReload', {
+                        page: {
+                            curr: 1 //重新从第 1 页开始
+                        },
+                        where: {
+                            Keyword: keyword,
+                        }
+                    });
+                }
+            };
+
+            $('.handle').on('click', function () {
+                var type = $(this).data('type');
+                active[type] ? active[type].call(this) : '';
+            });
+        });
+    </script>
+}
+

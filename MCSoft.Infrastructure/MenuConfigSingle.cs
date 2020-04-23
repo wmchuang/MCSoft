@@ -27,8 +27,16 @@ namespace MCSoft.Infrastructure
             menuList.Add(item);
 
             item = new ApplicationMenuItem("商品管理", t, "#", icon: "&#xe6f6;", order: 0);
-            item.Items.Add(new ApplicationMenuItem("分类管理", t, "/Category"));
-            item.Items.Add(new ApplicationMenuItem("商品列表", t, "/Product"));
+            item.Items.Add(new ApplicationMenuItem("商品列表", t, "/Service/Product"));
+            menuList.Add(item);
+
+            item = new ApplicationMenuItem("团长管理", t, "#", icon: "&#xe6f5;", order: 0);
+            item.Items.Add(new ApplicationMenuItem("团长列表", t, "/Service/Head"));
+            item.Items.Add(new ApplicationMenuItem("评价列表", t, "/Service/Evaluate"));
+            menuList.Add(item);
+
+            item = new ApplicationMenuItem("用户管理", t, "#", icon: "&#xe70b;", order: 0);
+            item.Items.Add(new ApplicationMenuItem("用户列表", t, "/Service/User"));
             menuList.Add(item);
 
             menuList.Normalize();
