@@ -108,5 +108,12 @@ namespace MCSoft.Application.Service
             headDto.FansCount = _userRepository.GetHeadFansCount(headId);
             return headDto;
         }
+
+        public bool IsHead()
+        {
+            var headId = _currentUser.Id.Value;
+            var head =  _headRepository.FirstOrDefault(x => x.Id == headId);
+            return head != null;
+        }
     }
 }

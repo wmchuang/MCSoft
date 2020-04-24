@@ -1,5 +1,6 @@
 ﻿using MCSoft.Application;
 using MCSoft.Infrastructure;
+using MCSoft.Infrastructure.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -82,11 +83,17 @@ namespace MCSoft.Api
 
             app.UseRouting();
 
+
+
             // 先开启认证
             app.UseAuthentication();
             // 再开启授权
             app.UseAuthorization();
             //app.UseJwtTokenMiddleware();
+
+            app.UseStaticFiles();
+
+            app.UseErrorHandling();
 
             app.UseSwagger();
             app.UseSwaggerUI(options =>
@@ -97,7 +104,6 @@ namespace MCSoft.Api
             });
 
 
-            app.UseStaticFiles();
 
             //app.UseMvcWithDefaultRouteAndArea();
 

@@ -26,10 +26,13 @@ namespace MCSoft.Api.Controllers
         /// <param name="dto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Save([FromBody]HeadSaveDto dto)
+        public async Task<Result<HeadDto>> Save([FromBody]HeadSaveDto dto)
         {
-            await _headAppService.SaveAsync(dto);
-            return Json(ResultBase.Success());
+            var result = new Result<HeadDto>
+            {
+                data = await _headAppService.SaveAsync(dto)
+            };
+            return result;
         }
 
 
@@ -43,6 +46,20 @@ namespace MCSoft.Api.Controllers
             var result = new Result<HeadDto>
             {
                 data = await _headAppService.GetAsync()
+            };
+            return result;
+        }
+
+        /// <summary>
+        /// 获取是不是店铺
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public Result<bool> IsHead()
+        {
+            var result = new Result<bool>
+            {
+                data =  _headAppService.IsHead()
             };
             return result;
         }

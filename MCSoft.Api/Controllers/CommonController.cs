@@ -55,7 +55,7 @@ namespace MCSoft.Api.Controllers
                 }
                 PicDeal.MakeThumbnail(filePath, 800, 600, "W");
 
-                result.data = $"{imgsave}/{newFileName}s.jpg"; ;
+                result.data = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}{imgsave}/{newFileName}s.jpg"; 
                 result.message = "图片上传成功";
             }
 

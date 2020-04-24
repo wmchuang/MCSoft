@@ -21,6 +21,11 @@ namespace MCSoft.Application.Dto.Product
         /// <summary>
         /// 商品价格
         /// </summary>
-        public decimal Price { get; set; } = 0m;
+        public decimal Price { get; set; }
+
+        /// <summary>
+        /// 是否上架
+        /// </summary>
+        public bool IsEnable { get; set; }
     }
 }
