@@ -90,9 +90,11 @@ namespace MCSoft.Application.Service
                 else
                 {
                     var userId = _currentUser.Id.Value;
-                    var categoryDto = ObjectMapper.Map<ProductSaveDto, ProductDto>(input);
-                    categoryDto.HeadId = userId;
-                    dto = await base.CreateAsync(categoryDto);
+                    var productDto = ObjectMapper.Map<ProductSaveDto, ProductDto>(input);
+                    productDto.HeadId = userId;
+                    productDto.IsEnable = true;
+                    productDto.ContentImg = productDto.ContentImg.TrimEnd(',');
+                    dto = await base.CreateAsync(productDto);
                 }
                 return dto;
             }
