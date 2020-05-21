@@ -73,7 +73,7 @@ namespace MCSoft.Domain.Models
 
             if (price < 0.01m)
             {
-                throw new BusinessException("价格不可小于0.01");
+                throw new ArgumentException("价格不可小于0.01");
             }
 
             this.Name = name;
