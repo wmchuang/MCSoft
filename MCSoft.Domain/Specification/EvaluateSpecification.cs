@@ -7,6 +7,7 @@ using Volo.Abp.Specifications;
 
 namespace MCSoft.Domain.Specification
 {
+    //Dev
     public class EvaluateSpecification : Specification<Evaluate>
     {
 
