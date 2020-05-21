@@ -26,6 +26,7 @@ namespace MCSoft.Domain.Specification
             if (this.HeadId.HasValue && this.HeadId.Value != Guid.Empty)
             {
                 exp = exp.And(x => x.HeadId == HeadId);
+
             }
 
             return exp;
