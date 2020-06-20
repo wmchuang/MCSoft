@@ -26,7 +26,7 @@ namespace MCSoft.Api.Controllers
         /// <param name="dto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<JsonResult> Save([FromBody]HeadSaveDto dto)
+        public async Task<JsonResult> Save([FromBody] HeadSaveDto dto)
         {
             var result = new Result<HeadDto>
             {
@@ -55,13 +55,13 @@ namespace MCSoft.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public Result<bool> IsHead()
+        public JsonResult IsHead()
         {
             var result = new Result<bool>
             {
-                data =  _headAppService.IsHead()
+                data = _headAppService.IsHead()
             };
-            return result;
+            return Json(result);
         }
     }
 }
