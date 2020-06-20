@@ -4,6 +4,11 @@
         <name>MCSoft.Application</name>
     </assembly>
     <members>
+        <member name="P:MCSoft.Application.Dto.Evaluate.EvaluateDto.Content">
+            <summary>
+            评价内容
+            </summary>
+        </member>
         <member name="P:MCSoft.Application.Dto.Head.HeadDto.Name">
             <summary>
             姓名
@@ -12,6 +17,11 @@
         <member name="P:MCSoft.Application.Dto.Head.HeadDto.CellName">
             <summary>
             小区名
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Head.HeadSimpleDto.Name">
+            <summary>
+            姓名
             </summary>
         </member>
         <member name="P:MCSoft.Application.Dto.Head.HeadUpdateDto.CellName">
@@ -107,6 +117,11 @@
         <member name="P:MCSoft.Application.Dto.Product.SmallProductDto.Price">
             <summary>
             商品价格
+            </summary>
+        </member>
+        <member name="P:MCSoft.Application.Dto.Product.SmallProductDto.IsEnable">
+            <summary>
+            是否上架
             </summary>
         </member>
         <member name="P:MCSoft.Application.Dto.User.UserDto.NickName">
