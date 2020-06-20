@@ -1,0 +1,153 @@
+16:32 || Information ||  || Starting web host. ||  ||end 
+16:32 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:32 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+16:32 || Information || Microsoft.EntityFrameworkCore.Infrastructure || Entity Framework Core "3.1.3" initialized '"MCSoftDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "None" ||  ||end 
+16:32 || Error || Microsoft.EntityFrameworkCore.Database.Connection || An error occurred using the connection to database '"qunshangpin"' on server '"127.0.0.1"'. ||  ||end 
+16:32 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+16:32 || Error || Microsoft.EntityFrameworkCore.Query || An exception occurred while iterating over the results of a query for context type '"MCSoft.Infrastructure.EntityFrameworkCore.MCSoftDbContext"'."
+""MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'qunshangpin'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 774
+   at MySqlConnector.Core.ServerSession.SwitchAuthenticationAsync(ConnectionSettings cs, PayloadData payload, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 535
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 431
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" || MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'qunshangpin'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 774
+   at MySqlConnector.Core.ServerSession.SwitchAuthenticationAsync(ConnectionSettings cs, PayloadData payload, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 535
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 431
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+ ||end 
+16:33 || Information ||  || Starting web host. ||  ||end 
+16:33 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:33 || Warning || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || Unknown element with name '"doc"' found in keyring, skipping. ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || Loaded ABP modules: ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectExtending.AbpObjectExtendingModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Uow.AbpUnitOfWorkModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Data.AbpDataModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Timing.AbpTimingModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Json.AbpJsonModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Security.AbpSecurityModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Threading.AbpThreadingModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.MultiTenancy.AbpMultiTenancyModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Auditing.AbpAuditingModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpAbstractionsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Minify.AbpMinifyModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Http.AbpHttpModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationAbstractionsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Authorization.AbpAuthorizationModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EventBus.AbpEventBusModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Guids.AbpGuidsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ObjectMapping.AbpObjectMappingModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Domain.AbpDddDomainModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Settings.AbpSettingsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Localization.AbpLocalizationModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.UI.AbpUiModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Validation.AbpValidationModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.AbpAspNetCoreModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationContractsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Features.AbpFeaturesModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Application.AbpDddApplicationModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Domain.MCSoftDomainModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Infrastructure.MCSoftInfrastructureModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Application.MCSoftApplicationModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Castle.AbpCastleCoreModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.Autofac.AbpAutofacModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - Volo.Abp.AutoMapper.AbpAutoMapperModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || - MCSoft.Api.APIModule ||  ||end 
+16:33 || Information || Volo.Abp.Modularity.ModuleManager || Initialized all ABP modules. ||  ||end 
+16:33 || Information || Microsoft.Hosting.Lifetime || Now listening on: "https://localhost:5001" ||  ||end 
+16:33 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://localhost:5000" ||  ||end 
+16:33 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+16:33 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+16:33 || Information || Microsoft.Hosting.Lifetime || Content root path: "E:\Chuang\MCSoft\MCSoft.Api" ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 409.8833ms 301  ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/index.html   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 61.7082ms 200 text/html;charset=utf-8 ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/ui/abp.js   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/swagger/ui/abp.js"'. Physical path: '"E:\Chuang\MCSoft\MCSoft.Api\wwwroot\swagger\ui\abp.js"' ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 9.3561ms 200 application/javascript ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/ui/abp.swagger.js   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/swagger/ui/abp.swagger.js"'. Physical path: '"E:\Chuang\MCSoft\MCSoft.Api\wwwroot\swagger\ui\abp.swagger.js"' ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 0.8567ms 200 application/javascript ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 52.2387ms 200 text/css ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 51.6336ms 200 application/javascript ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 83.0153ms 200 application/javascript ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png   ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware || Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 1.0474ms 200 image/png ||  ||end 
+16:33 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished in 220.1692ms 200 application/json;charset=utf-8 ||  ||end 

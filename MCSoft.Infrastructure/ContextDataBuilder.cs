@@ -27,8 +27,8 @@ namespace MCSoft.Infrastructure
 
         public async void Build()
         {
-            await InitMenusAsync();
-            await InitRoleAsync();
+            //await InitMenusAsync();
+            //await InitRoleAsync();
         }
 
         private async Task InitRoleAsync()
