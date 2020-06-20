@@ -29,29 +29,23 @@ namespace MCSoft.Application.Service
 
         public async Task<PagedResultDto<T>> Search<T>(SearchInput dto, ISpecification<Product> spec)
         {
-            try
+
+            var repository = Repository.Where(spec.ToExpression());
+
+            var count = await repository.CountAsync();
+
+            var list = await repository
+                .OrderByDescending(g => g.CreationTime)
+                .PageBy(dto)
+                .ToListAsync();
+
+            var items = ObjectMapper.Map<List<Product>, List<T>>(list);
+
+            return new PagedResultDto<T>
             {
-                var repository = Repository.Where(spec.ToExpression());
-
-                var count = await repository.CountAsync();
-
-                var list = await repository
-                    .OrderByDescending(g => g.CreationTime)
-                    .PageBy(dto)
-                    .ToListAsync();
-
-                var items = ObjectMapper.Map<List<Product>, List<T>>(list);
-
-                return new PagedResultDto<T>
-                {
-                    TotalCount = count,
-                    Items = items
-                };
-            }
-            catch (Exception e)
-            {
-                return null;
-            }
+                TotalCount = count,
+                Items = items
+            };
         }
 
         public async Task<PagedResultDto<SmallProductDto>> SearchApi(SearchInput dto, ISpecification<Product> spec)

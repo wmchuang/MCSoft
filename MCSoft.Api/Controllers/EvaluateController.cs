@@ -33,7 +33,7 @@ namespace MCSoft.Api.Controllers
         /// <param name="dto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody]EvaluateAddInputDto dto)
+        public async Task<IActionResult> Add([FromBody] EvaluateAddInputDto dto)
         {
             await _evaluateAppService.Add(dto);
             return Json(ResultBase.Success());
@@ -46,11 +46,11 @@ namespace MCSoft.Api.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<Result<PagedResultDto<EvaluateDto>>> Search(EvaluateSearchInputDto input)
+        public async Task<IActionResult> Search(EvaluateSearchInputDto input)
         {
             var result = new Result<PagedResultDto<EvaluateDto>>();
             result.data = await _evaluateAppService.Search(input, new EvaluateSpecification(input.HeadId));
-            return result;
+            return Json(result);
         }
     }
 }

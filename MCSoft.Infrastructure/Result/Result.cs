@@ -75,7 +75,7 @@ namespace MCSoft.Infrastructure.Result
         }
 
 
-        public static Result<T> Error(string message = "保存失败")
+        public static new Result<T> Error(string message = "保存失败")
         {
             return new Result<T>()
             {

@@ -25,7 +25,7 @@ namespace MCSoft.Infrastructure
             _managerRoleRepository = managerRoleRepository;
         }
 
-        public async void Build()
+        public void Build()
         {
             //await InitMenusAsync();
             //await InitRoleAsync();

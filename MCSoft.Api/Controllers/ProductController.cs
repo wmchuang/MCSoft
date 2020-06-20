@@ -60,11 +60,11 @@ namespace MCSoft.Api.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<Result<PagedResultDto<SmallProductDto>>> Search(ProductSearchInput input)
+        public async Task<IActionResult> Search(ProductSearchInput input)
         {
             var result = new Result<PagedResultDto<SmallProductDto>>();
             result.data = await _productAppService.SearchApi(input, new ProductSpecification(input.Keyword, input.HeadId, input.IsEnable));
-            return result;
+            return Json(result);
         }
 
         /// <summary>
