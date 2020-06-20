@@ -27,7 +27,7 @@ namespace MCSoft.Utility.Encrypt
             {
                 inputBye = Encoding.GetEncoding(charset).GetBytes(encypStr);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 inputBye = Encoding.GetEncoding("utf-8").GetBytes(encypStr);
             }
