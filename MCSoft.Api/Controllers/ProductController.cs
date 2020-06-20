@@ -45,13 +45,13 @@ namespace MCSoft.Api.Controllers
         /// <param name="productId"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<Result<ProductDto>> Get(Guid productId)
+        public async Task<IActionResult> Get(Guid productId)
         {
             var result = new Result<ProductDto>()
             {
                 data = await _productAppService.GetAsync(productId)
             };
-            return result;
+            return Json(result);
         }
 
         /// <summary>

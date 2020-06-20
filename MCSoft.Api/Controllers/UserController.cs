@@ -24,10 +24,10 @@ namespace MCSoft.Api.Controllers
         /// <param name="headId"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<ResultBase> ChangeHead(Guid headId)
+        public async Task<JsonResult> ChangeHead(Guid headId)
         {
             await _userAppService.ChangeHead(headId);
-            return ResultBase.Success();
+            return Json(ResultBase.Success());
         }
 
         /// <summary>
@@ -35,13 +35,13 @@ namespace MCSoft.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<Result<HeadDto>> CurrentHead()
+        public async Task<JsonResult> CurrentHead()
         {
             var result = new Result<HeadDto>()
             {
                 data = await _userAppService.CurrentHead()
             };
-            return result;
+            return Json(result);
         }
 
     }

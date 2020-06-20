@@ -26,13 +26,13 @@ namespace MCSoft.Api.Controllers
         /// <param name="dto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<Result<HeadDto>> Save([FromBody]HeadSaveDto dto)
+        public async Task<JsonResult> Save([FromBody]HeadSaveDto dto)
         {
             var result = new Result<HeadDto>
             {
                 data = await _headAppService.SaveAsync(dto)
             };
-            return result;
+            return Json(result);
         }
 
 
@@ -41,13 +41,13 @@ namespace MCSoft.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<Result<HeadDto>> Get()
+        public async Task<JsonResult> Get()
         {
             var result = new Result<HeadDto>
             {
                 data = await _headAppService.GetAsync()
             };
-            return result;
+            return Json(result);
         }
 
         /// <summary>
