@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MCSoft.Infrastructure.Migrations
 {
     [DbContext(typeof(MCSoftDbContext))]
-    [Migration("20200423010914_init3")]
-    partial class init3
+    [Migration("20200620060151_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -73,6 +73,8 @@ namespace MCSoft.Infrastructure.Migrations
                         .HasColumnType("char(36)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HeadId");
 
                     b.HasIndex("UserId");
 
@@ -502,6 +504,12 @@ namespace MCSoft.Infrastructure.Migrations
 
             modelBuilder.Entity("MCSoft.Domain.Models.Evaluate", b =>
                 {
+                    b.HasOne("MCSoft.Domain.Models.Head", "Head")
+                        .WithMany()
+                        .HasForeignKey("HeadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MCSoft.Domain.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")

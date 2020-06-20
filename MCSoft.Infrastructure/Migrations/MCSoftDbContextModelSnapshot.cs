@@ -72,6 +72,8 @@ namespace MCSoft.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("HeadId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("app_evaluates");
@@ -500,6 +502,12 @@ namespace MCSoft.Infrastructure.Migrations
 
             modelBuilder.Entity("MCSoft.Domain.Models.Evaluate", b =>
                 {
+                    b.HasOne("MCSoft.Domain.Models.Head", "Head")
+                        .WithMany()
+                        .HasForeignKey("HeadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MCSoft.Domain.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")

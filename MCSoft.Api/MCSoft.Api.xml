@@ -16,6 +16,25 @@
             <param name="formFile">图片文件</param>
             <returns></returns>
         </member>
+        <member name="T:MCSoft.Api.Controllers.EvaluateController">
+            <summary>
+            评价
+            </summary>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.EvaluateController.Add(MCSoft.Application.Dto.Evaluate.EvaluateAddInputDto)">
+            <summary>
+            添加评价
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.EvaluateController.Search(MCSoft.Application.Dto.Evaluate.EvaluateSearchInputDto)">
+            <summary>
+            列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
         <member name="M:MCSoft.Api.Controllers.HeadController.Save(MCSoft.Application.Dto.Head.HeadSaveDto)">
             <summary>
             申请成为团长
@@ -26,6 +45,12 @@
         <member name="M:MCSoft.Api.Controllers.HeadController.Get">
             <summary>
             获取我的店铺
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MCSoft.Api.Controllers.HeadController.IsHead">
+            <summary>
+            获取是不是店铺
             </summary>
             <returns></returns>
         </member>
