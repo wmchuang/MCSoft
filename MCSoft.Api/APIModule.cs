@@ -99,8 +99,8 @@ namespace MCSoft.Api
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "MCSoft API");
-                //options.IndexStream = () => GetType().Assembly
-                //     .GetManifestResourceStream("MCSoft.Api.wwwroot.swagger.ui.index.html"); // requires file to be added as an embedded resource
+                options.IndexStream = () => GetType().Assembly
+                     .GetManifestResourceStream("MCSoft.Api.wwwroot.swagger.ui.index.html"); // requires file to be added as an embedded resource
             });
 
 
