@@ -45,11 +45,9 @@ namespace MCSoft.Api.Controllers
         [AllowAnonymous]
         public async Task<AuthenticateResultModel> AuthenticateLogin([FromBody] AuthenticateInput input)
         {
-            try
-            {
-                var openId = string.Empty;
+            var openId = string.Empty;
 #if DEBUG
-                openId = "testopenid";
+            openId = "testopenid";
 
 #else
             var jsonResult = await SnsApi.JsCode2JsonAsync(WxOpenAppId, WxOpenAppSecret, input.Code);
@@ -58,31 +56,25 @@ namespace MCSoft.Api.Controllers
                 openId = jsonResult.openid;
             }
 #endif
-                Console.WriteLine(openId);
-                var dto = await _userAppService.Authorize(openId, input.HeadId);
+            Console.WriteLine(openId);
+            var dto = await _userAppService.Authorize(openId, input.HeadId);
 
-                IdentityUser login = new IdentityUser
-                {
-                    RememberMe = true,
-                    UserId = dto.Id.ToString(),
-                    Name = dto.NickName,
-                };
-
-                var accessToken =
-                    CreateAccessToken(CreateJwtClaims(login.CreateIdentity(JwtBearerDefaults.AuthenticationScheme)));
-
-                return new AuthenticateResultModel
-                {
-                    AccessToken = accessToken,
-                    ExpireInSeconds = (int)TimeSpan.FromDays(30).TotalSeconds,
-                    UserId = dto.Id.ToString()
-                };
-            }
-            catch (Exception e)
+            IdentityUser login = new IdentityUser
             {
-                Console.WriteLine(e.Message.ToString());
-                return new AuthenticateResultModel();
-            }
+                RememberMe = true,
+                UserId = dto.Id.ToString(),
+                Name = dto.NickName,
+            };
+
+            var accessToken =
+                CreateAccessToken(CreateJwtClaims(login.CreateIdentity(JwtBearerDefaults.AuthenticationScheme)));
+
+            return new AuthenticateResultModel
+            {
+                AccessToken = accessToken,
+                ExpireInSeconds = (int)TimeSpan.FromDays(30).TotalSeconds,
+                UserId = dto.Id.ToString()
+            };
         }
 
 
