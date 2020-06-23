@@ -1,5 +1,6 @@
 ﻿using MCSoft.Domain.IRepository;
 using MCSoft.Domain.Models;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,14 +17,15 @@ namespace MCSoft.Domain.Service
         #region Ctor
         private readonly IRepository<User, Guid> _userRepository;
         private readonly IHeadRepository _headRepository;
-
+        private readonly ILogger<UserService> _logger;
         protected ICurrentUser _currentUser { get; }
-        public UserService(IRepository<User, Guid> userRepository, IHeadRepository headRepository, ICurrentUser currentUser)
+        public UserService(IRepository<User, Guid> userRepository, IHeadRepository headRepository, ICurrentUser currentUser, ILogger<UserService> logger)
         {
 
             _userRepository = userRepository;
             _headRepository = headRepository;
             _currentUser = currentUser;
+            _logger = logger;
         }
 
         #endregion
@@ -39,12 +41,21 @@ namespace MCSoft.Domain.Service
 
         public async Task<Head> CurrentHead()
         {
-            var userId = _currentUser.Id.Value;
-            var user = await _userRepository.GetAsync(userId);
+            try
+            {
+                var userId = _currentUser.Id.Value;
+                var user = await _userRepository.GetAsync(userId);
 
-            var head = await _headRepository.GetIncludeAsync(user.BelongHeadId.Value);
-            head.AddBrowseCount();
-            return head;
+                var head = await _headRepository.GetIncludeAsync(user.BelongHeadId.Value);
+                head.AddBrowseCount();
+                return head;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.ToString());
+                return null;
+            }
+
         }
 
     }
