@@ -15,16 +15,9 @@ namespace MCSoft.Api
     {
         public static int Main(string[] args)
         {
-//            Log.Logger = new LoggerConfiguration()
-//#if DEBUG
-//                .MinimumLevel.Debug()
-//#else
-//                .MinimumLevel.Information()
-//#endif
-//                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-//             .Enrich.FromLogContext()
-//            .WriteTo.Async(c => c.File("Logs/logs.log", outputTemplate: "{Timestamp:HH:mm} || {Level} || {SourceContext:l} || {Message} || {Exception} ||end {NewLine}", rollingInterval: RollingInterval.Day))
-//             .CreateLogger();
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.Console()
+                .CreateLogger();
 
             try
             {

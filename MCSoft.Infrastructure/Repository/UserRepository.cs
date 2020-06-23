@@ -58,6 +58,7 @@ namespace MCSoft.Infrastructure.Repository
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.Message);
                 _logger.LogError(e.Message);
                 return null;
             }
