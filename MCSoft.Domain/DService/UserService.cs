@@ -43,11 +43,18 @@ namespace MCSoft.Domain.Service
         {
             try
             {
+                _logger.LogInformation("begin");
                 var userId = _currentUser.Id.Value;
+                _logger.LogInformation(userId.ToString());
                 var user = await _userRepository.GetAsync(userId);
+                _logger.LogInformation(user.ToString());
 
                 var head = await _headRepository.GetIncludeAsync(user.BelongHeadId.Value);
+                _logger.LogInformation(head.ToString());
+
                 head.AddBrowseCount();
+
+                _logger.LogInformation("end");
                 return head;
             }
             catch (Exception e)
