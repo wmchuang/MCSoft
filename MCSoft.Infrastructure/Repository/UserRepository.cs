@@ -1,6 +1,8 @@
 ﻿using MCSoft.Domain.IRepository;
 using MCSoft.Domain.Models;
 using MCSoft.Infrastructure.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Serilog.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +18,15 @@ namespace MCSoft.Infrastructure.Repository
     public class UserRepository : EfCoreRepository<MCSoftDbContext, User, Guid>, IUserRepository
     {
         private ICurrentUser _currentUser { get; }
+        private readonly ILogger<UserRepository> _logger;
 
         private readonly IRepository<Head, Guid> _headRepository;
-        public UserRepository(IDbContextProvider<MCSoftDbContext> dbContextProvider, ICurrentUser currentUser, IRepository<Head, Guid> headRepository)
+        public UserRepository(IDbContextProvider<MCSoftDbContext> dbContextProvider, ICurrentUser currentUser, IRepository<Head, Guid> headRepository, ILogger<UserRepository> logger)
     : base(dbContextProvider)
         {
             _currentUser = currentUser;
             _headRepository = headRepository;
+            _logger = logger;
         }
 
         /// <summary>
@@ -54,7 +58,8 @@ namespace MCSoft.Infrastructure.Repository
             }
             catch (Exception e)
             {
-                throw e;
+                _logger.LogError(e.Message);
+                return null;
             }
         }
 
