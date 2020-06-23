@@ -46,10 +46,12 @@ namespace MCSoft.Api.Controllers
         public async Task<AuthenticateResultModel> AuthenticateLogin([FromBody] AuthenticateInput input)
         {
             var openId = string.Empty;
+
 #if DEBUG
             openId = "testopenid";
 
 #else
+             Console.WriteLine(WxOpenAppId);
             var jsonResult = await SnsApi.JsCode2JsonAsync(WxOpenAppId, WxOpenAppSecret, input.Code);
             if (jsonResult.errcode == ReturnCode.请求成功)
             {
