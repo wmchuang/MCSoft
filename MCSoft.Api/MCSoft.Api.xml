@@ -9,6 +9,13 @@
             添加授权配置信息
             </summary>
         </member>
+        <member name="M:MCSoft.Api.Controllers.CommonController.UploadImg(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="formFile">图片文件</param>
+            <returns></returns>
+        </member>
         <member name="T:MCSoft.Api.Controllers.EvaluateController">
             <summary>
             评价
