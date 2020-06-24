@@ -8,6 +8,7 @@ using MCSoft.Utility;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Serilog;
 using Volo.Abp.AspNetCore.Mvc;
@@ -20,10 +21,11 @@ namespace MCSoft.Api.Controllers
     {
         private readonly IWebHostEnvironment _hostingEnvironment;
 
-
-        public CommonController(IWebHostEnvironment hostingEnvironment)
+        private readonly IConfiguration _configuration;
+        public CommonController(IWebHostEnvironment hostingEnvironment, IConfiguration configuration)
         {
             _hostingEnvironment = hostingEnvironment;
+            _configuration = configuration;
         }
 
         /// <summary>
@@ -55,7 +57,7 @@ namespace MCSoft.Api.Controllers
                 }
                 //PicDeal.MakeThumbnail(filePath, 800, 600, "W");
 
-                result.data = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}{imgsave}/{newFileName}s.jpg";
+                result.data = $"{_configuration["Domain"]}{imgsave}/{newFileName}s.jpg";
                 result.message = "图片上传成功";
             }
 
