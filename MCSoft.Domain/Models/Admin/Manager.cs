@@ -44,11 +44,7 @@ namespace MCSoft.Domain.Models
 
         public bool VerifyPassword(string password)
         {
-            if (MD5Util.GetMD5(password + PasswordSalt) == Password)
-            {
-                return true;
-            }
-            return false;
+            return MD5Util.GetMD5(password + PasswordSalt) == Password;
         }
     }
 }

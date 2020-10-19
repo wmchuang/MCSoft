@@ -1,9 +1,7 @@
-﻿using MCSoft.Domain;
-using MCSoft.Domain.Models;
+﻿using MCSoft.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -41,10 +39,23 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
 
         }
 
+        //记录EFCore Sql查询日志
+        // private static readonly ILoggerFactory MyLoggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
+        //
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     base.OnConfiguring(optionsBuilder);
+        //     optionsBuilder.UseLoggerFactory(MyLoggerFactory);
+        // }
+
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
 
+            //builder.UseLoggerFactory(MyLoggerFactory);
+
             //base.OnModelCreating(builder);
+
             /* Configure the shared tables (with included modules) here */
 
             //builder.Entity<Test>(b =>

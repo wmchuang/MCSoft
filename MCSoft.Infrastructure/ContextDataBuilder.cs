@@ -56,14 +56,12 @@ namespace MCSoft.Infrastructure
             menuList.ForEach(async p =>
             {
                 var parentMenu = new Menu();
-                parentMenu = await UpdateDBAsync(p, list, Guid.Empty);
+                parentMenu = await UpdateDbAsync(p, list, Guid.Empty);
 
-                if (p.Items.Any())
+                if (!p.Items.Any()) return;
+                foreach (var item in p.Items)
                 {
-                    foreach (var citem in p.Items)
-                    {
-                        await UpdateDBAsync(citem, list, parentMenu.Id);
-                    }
+                    await UpdateDbAsync(item, list, parentMenu.Id);
                 }
             });
         }
@@ -73,8 +71,9 @@ namespace MCSoft.Infrastructure
         /// </summary>
         /// <param name="p"></param>
         /// <param name="list"></param>
+        /// <param name="parentId"></param>
         /// <returns></returns>
-        private async Task<Menu> UpdateDBAsync(ApplicationMenuItem p, List<Menu> list, Guid parentId)
+        private async Task<Menu> UpdateDbAsync(ApplicationMenuItem p, List<Menu> list, Guid parentId)
         {
             Menu item;
             if (list.Exists(x => x.Url == p.Url && x.Name == p.Name))

@@ -9,7 +9,7 @@ namespace MCSoft.Domain.Models
     /// <summary>
     /// 团长
     /// </summary>
-    public partial class Head : FullAuditedAggregateRoot<Guid>
+    public sealed partial class Head : FullAuditedAggregateRoot<Guid>
     {
         /// <summary>
         /// 姓名
@@ -34,30 +34,30 @@ namespace MCSoft.Domain.Models
 
         public int BrowseCount { get; set; } = 0;
 
-        public virtual User User { get; set; }
+        public User User { get; set; }
     }
 
-    public partial class Head
+    public sealed partial class Head
     {
         private Head() { }
 
         public Head(User user, string name, string phone, string wxNumber, string cellName)
         {
-            this.User = user;
-            this.Name = name;
-            this.Phone = phone;
-            this.WxNumber = wxNumber;
-            this.CellName = cellName;
+           User = user;
+           Name = name;
+           Phone = phone;
+           WxNumber = wxNumber;
+           CellName = cellName;
         }
 
         public void ChangeStatus(Status headStatus)
         {
-            this.HeadStatus = headStatus;
+            HeadStatus = headStatus;
         }
 
         public void AddBrowseCount()
         {
-            this.BrowseCount += 1;
+            BrowseCount += 1;
         }
     }
 }

@@ -22,13 +22,13 @@ namespace MCSoft.Infrastructure.Middleware
     /// </summary>
     public class ErrorHandlingMiddleware
     {
-        private readonly RequestDelegate next;
+        private readonly RequestDelegate _next;
         private readonly ILogger<ErrorHandlingMiddleware> _logger;
         private readonly IHostingEnvironment _env;
 
         public ErrorHandlingMiddleware(RequestDelegate next, ILogger<ErrorHandlingMiddleware> logger, IHostingEnvironment env)
         {
-            this.next = next;
+            _next = next;
             _logger = logger;
             _env = env;
         }
@@ -36,7 +36,7 @@ namespace MCSoft.Infrastructure.Middleware
         {
             try
             {
-                await next(context);
+                await _next(context);
             }
             catch (Exception ex)
             {
@@ -77,7 +77,7 @@ namespace MCSoft.Infrastructure.Middleware
                 response.StatusCode = (int)HttpStatusCode.Unauthorized;
             else if (exception is BusinessException )
                 response.StatusCode = (int)HttpStatusCode.OK;
-            else if (exception is Exception)
+            else
                 response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
             response.ContentType = context.Request.Headers["Accept"];
@@ -107,19 +107,21 @@ namespace MCSoft.Infrastructure.Middleware
 
 
             var param = string.Empty;
-            if (request.Method.ToLower() == "get")
+            switch (request.Method.ToLower())
             {
-                param = JsonConvert.SerializeObject(request.Query);
-            }
-            else if (request.Method.ToLower() == "post")
-            {
-                if (context.Request.ContentLength != 0)
+                case "get":
+                    param = JsonConvert.SerializeObject(request.Query);
+                    break;
+                case "post":
                 {
-                    using (StreamReader reader = new StreamReader(request.Body, Encoding.UTF8))
+                    using StreamReader reader = new StreamReader(request.Body, Encoding.UTF8);
+                    if (context.Request.ContentLength != 0)
                     {
                         request.Body.Position = 0;//重新设置数据流的起始位置
                         param = reader.ReadToEnd();
                     }
+
+                    break;
                 }
             }
 
@@ -139,10 +141,10 @@ namespace MCSoft.Infrastructure.Middleware
         /// <returns></returns>
         private static string Object2XmlString(object o)
         {
-            StringWriter sw = new StringWriter();
+            var sw = new StringWriter();
             try
             {
-                XmlSerializer serializer = new XmlSerializer(o.GetType());
+                var serializer = new XmlSerializer(o.GetType());
                 serializer.Serialize(sw, o);
             }
             catch

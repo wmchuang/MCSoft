@@ -1,9 +1,6 @@
 ﻿using MCSoft.Domain;
 using MCSoft.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 

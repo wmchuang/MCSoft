@@ -53,12 +53,10 @@ namespace MCSoft.Infrastructure
 
         private static void SeedTestData(ApplicationInitializationContext context)
         {
-            using (var scope = context.ServiceProvider.CreateScope())
-            {
-                scope.ServiceProvider
-                    .GetRequiredService<ContextDataBuilder>()
-                    .Build();
-            }
+            using var scope = context.ServiceProvider.CreateScope();
+            scope.ServiceProvider
+                .GetRequiredService<ContextDataBuilder>()
+                .Build();
         }
     }
 }
