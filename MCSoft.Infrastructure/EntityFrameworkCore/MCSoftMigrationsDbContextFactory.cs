@@ -20,7 +20,7 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
             return new MCSoftDbContext(builder.Options);
         }
 
-        private static IConfigurationRoot BuildConfiguration()
+        public static IConfigurationRoot BuildConfiguration()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

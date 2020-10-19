@@ -38,15 +38,15 @@ namespace MCSoft.Api
             services.AddDataProtection()
                     .PersistKeysToFileSystem(new DirectoryInfo(Directory.GetCurrentDirectory()));
 
-            #region Ğ¡³ÌĞò
+            #region å°ç¨‹åº
 
             /*
-             * CO2NET ÊÇ´Ó Senparc.Weixin ·ÖÀëµÄµ×²ã¹«¹²»ù´¡Ä£¿é£¬¾­¹ıÁË³¤´ï 6 ÄêµÄµü´úÓÅ»¯£¬ÎÈ¶¨¿É¿¿¡£
-             * ¹ØÓÚ CO2NET ÔÚËùÓĞÏîÄ¿ÖĞµÄÍ¨ÓÃÉèÖÃ¿É²Î¿¼ CO2NET µÄ Sample£º
+             * CO2NET æ˜¯ä» Senparc.Weixin åˆ†ç¦»çš„åº•å±‚å…¬å…±åŸºç¡€æ¨¡å—ï¼Œç»è¿‡äº†é•¿è¾¾ 6 å¹´çš„è¿­ä»£ä¼˜åŒ–ï¼Œç¨³å®šå¯é ã€‚
+             * å…³äº CO2NET åœ¨æ‰€æœ‰é¡¹ç›®ä¸­çš„é€šç”¨è®¾ç½®å¯å‚è€ƒ CO2NET çš„ Sampleï¼š
              * https://github.com/Senparc/Senparc.CO2NET/blob/master/Sample/Senparc.CO2NET.Sample.netcore/Startup.cs
              */
-            services.AddSenparcGlobalServices(Configuration) //Senparc.CO2NET È«¾Ö×¢²á
-                .AddSenparcWeixinServices(Configuration); //Senparc.Weixin ×¢²á
+            services.AddSenparcGlobalServices(Configuration) //Senparc.CO2NET å…¨å±€æ³¨å†Œ
+                .AddSenparcWeixinServices(Configuration); //Senparc.Weixin æ³¨å†Œ
 
             #endregion
 
@@ -59,15 +59,15 @@ namespace MCSoft.Api
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
             IOptions<SenparcSetting> senparcSetting, IOptions<SenparcWeixinSetting> senparcWeixinSetting)
         {
-            #region Î¢ĞÅ
+            #region å¾®ä¿¡
 
-            // Æô¶¯ CO2NET È«¾Ö×¢²á£¬±ØĞë£¡
+            // å¯åŠ¨ CO2NET å…¨å±€æ³¨å†Œï¼Œå¿…é¡»ï¼
             IRegisterService register = RegisterService.Start(senparcSetting.Value)
-                //¹ØÓÚ UseSenparcGlobal() µÄ¸ü¶àÓÃ·¨¼û CO2NET Demo£ºhttps://github.com/Senparc/Senparc.CO2NET/blob/master/Sample/Senparc.CO2NET.Sample.netcore/Startup.cs
+                //å…³äº UseSenparcGlobal() çš„æ›´å¤šç”¨æ³•è§ CO2NET Demoï¼šhttps://github.com/Senparc/Senparc.CO2NET/blob/master/Sample/Senparc.CO2NET.Sample.netcore/Startup.cs
                 .UseSenparcGlobal();
             register.UseSenparcWeixin(senparcWeixinSetting.Value, senparcSetting.Value)
-                .RegisterWxOpenAccount(senparcWeixinSetting.Value, "Ğ¡³ÌĞò"); // DPBMARK_END
-                //.RegisterTenpayV3(senparcWeixinSetting.Value, "Ğ¡³ÌĞòÖ§¸¶")
+                .RegisterWxOpenAccount(senparcWeixinSetting.Value, "å°ç¨‹åº"); // DPBMARK_END
+                                                                           //.RegisterTenpayV3(senparcWeixinSetting.Value, "å°ç¨‹åºæ”¯ä»˜")
             #endregion
 
             app.InitializeApplication();

@@ -1,53 +1,83 @@
-﻿using MCSoft.Application;
+﻿using System;
+using MCSoft.Application;
 using MCSoft.Infrastructure;
 using MCSoft.Infrastructure.Middleware;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.ReDoc;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Volo.Abp;
+using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.AutoMapper;
+using Volo.Abp.Data;
 using Volo.Abp.Modularity;
+using Volo.Abp.MultiTenancy;
+using Volo.Abp.MultiTenancy.ConfigurationStore;
 
 namespace MCSoft.Api
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule),
-             typeof(MCSoftApplicationModule),
-             typeof(MCSoftInfrastructureModule),
-             typeof(AbpAutofacModule),
-             typeof(AbpAutoMapperModule))]
+        typeof(MCSoftApplicationModule),
+        typeof(MCSoftInfrastructureModule),
+        typeof(AbpAutofacModule),
+        typeof(AbpAutoMapperModule),
+        typeof(AbpAspNetCoreMultiTenancyModule))]
     public class APIModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            var hostingEnvironment = context.Services.GetHostingEnvironment();
+            //var hostingEnvironment = context.Services.GetHostingEnvironment();
             var configuration = context.Services.GetConfiguration();
 
+            Configure<AbpMultiTenancyOptions>(options =>
+            {
+                options.IsEnabled = true;
+            });
+            
             ConfigureAutoMapper();
 
             AuthConfigurer.Configure(context.Services, configuration);
 
+           // Configure<AbpDefaultTenantStoreOptions>(BuildConfiguration());
+            Configure<AbpDefaultTenantStoreOptions>(options =>
+            {
+                options.Tenants = new[]
+                {
+                    new TenantConfiguration(
+                        Guid.Parse("446a5211-3d72-4339-9adc-845151f8ada0"), //Id
+                        "tenant1" //Name
+                    ),
+                    new TenantConfiguration(
+                        Guid.Parse("25388015-ef1c-4355-9c18-f6b6ddbaf89d"), //Id
+                        "tenant2" //Name
+                    )
+                    // {
+                    //     //tenant2 有单独的数据库连接字符串
+                    //     ConnectionStrings =
+                    //     {
+                    //         {ConnectionStrings.DefaultConnectionStringName, "..."}
+                    //     }
+                    // }
+                };
+            });
+            
             ConfigureSwaggerServices(context.Services);
         }
 
+        private static IConfigurationRoot BuildConfiguration()
+        {
+            return new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .Build();
+        }
 
         private void ConfigureAutoMapper()
         {
-            Configure<AbpAutoMapperOptions>(options =>
-            {
-                options.AddMaps<APIModule>();
-
-            });
+            Configure<AbpAutoMapperOptions>(options => { options.AddMaps<APIModule>(); });
         }
 
         private void ConfigureSwaggerServices(IServiceCollection services)
@@ -56,7 +86,7 @@ namespace MCSoft.Api
             services.AddSwaggerGen(
                 options =>
                 {
-                    options.SwaggerDoc("v1", new OpenApiInfo { Title = "MCSoft API", Version = "v1" });
+                    options.SwaggerDoc("v1", new OpenApiInfo {Title = "MCSoft API", Version = "v1"});
                     options.DocInclusionPredicate((docName, description) => true);
                     options.CustomSchemaIds(type => type.FullName);
 
@@ -83,8 +113,6 @@ namespace MCSoft.Api
 
             app.UseRouting();
 
-
-
             // 先开启认证
             app.UseAuthentication();
             // 再开启授权
@@ -100,8 +128,10 @@ namespace MCSoft.Api
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "MCSoft API");
                 options.IndexStream = () => GetType().Assembly
-                     .GetManifestResourceStream("MCSoft.Api.wwwroot.swagger.ui.index.html"); // requires file to be added as an embedded resource
+                    .GetManifestResourceStream("MCSoft.Api.wwwroot.swagger.ui.index.html"); // requires file to be added as an embedded resource
             });
+
+            app.UseMultiTenancy();
 
             app.UseEndpoints(endpoints =>
             {
@@ -115,7 +145,6 @@ namespace MCSoft.Api
                 endpoints.MapRazorPages();
             });
         }
-
 
     }
 }

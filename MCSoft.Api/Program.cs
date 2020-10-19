@@ -16,6 +16,7 @@ namespace MCSoft.Api
         public static int Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
+                //.MinimumLevel.Debug()
                 .WriteTo.Console()
                 .CreateLogger();
 
@@ -38,7 +39,7 @@ namespace MCSoft.Api
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .UseSerilog() //使用Serilog日志
+                .UseSerilog() //使锟斤拷Serilog锟斤拷志
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
