@@ -54,13 +54,13 @@ namespace MCSoft.Api
                         Guid.Parse("25388015-ef1c-4355-9c18-f6b6ddbaf89d"), //Id
                         "tenant2" //Name
                     )
-                    // {
-                    //     //tenant2 有单独的数据库连接字符串
-                    //     ConnectionStrings =
-                    //     {
-                    //         {ConnectionStrings.DefaultConnectionStringName, "..."}
-                    //     }
-                    // }
+                    {
+                        //tenant2 有单独的数据库连接字符串
+                        ConnectionStrings =
+                        {
+                            {ConnectionStrings.DefaultConnectionStringName, "Server=127.0.0.1;Port=3306;Database=mcsoft;uid=root;pwd=123456;Charset=utf8mb4"}
+                        }
+                    }
                 };
             });
             
