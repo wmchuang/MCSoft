@@ -58,7 +58,6 @@ namespace MCSoft.Api.Controllers
                 openId = jsonResult.openid;
             }
 #endif
-            Console.WriteLine(openId);
             var dto = await _userAppService.Authorize(openId, input.HeadId);
 
             IdentityUser login = new IdentityUser
@@ -99,7 +98,7 @@ namespace MCSoft.Api.Controllers
         /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
-        [ApiExplorerSettings(IgnoreApi = true)] //忽略接口，不在文档中显示
+        //[ApiExplorerSettings(IgnoreApi = true)] //忽略接口，不在文档中显示
         public async Task<AuthenticateResultModel> AuthenticateTest([FromBody] TeatAuthenticateInput input)
         {
             var dto = await _userAppService.Authorize(input.OpenId, input.HeadId);
