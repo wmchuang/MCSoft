@@ -22,6 +22,8 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
 
         public DbSet<RoleMenu> RoleMenus { get; set; }
 
+        public DbSet<HandleLog> Logs { get; set; }
+
         #region APP
         public DbSet<User> Users { get; set; }
 

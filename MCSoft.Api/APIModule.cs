@@ -99,24 +99,9 @@ namespace MCSoft.Api
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "MCSoft API");
-                //options.IndexStream = () => GetType().Assembly
-                //     .GetManifestResourceStream("MCSoft.Api.wwwroot.swagger.ui.index.html"); // requires file to be added as an embedded resource
+                options.IndexStream = () => GetType().Assembly
+                     .GetManifestResourceStream("MCSoft.Api.wwwroot.swagger.ui.index.html"); // requires file to be added as an embedded resource
             });
-
-
-
-            //app.UseMvcWithDefaultRouteAndArea();
-
-            //app.UseMvc(routes =>
-            //{
-            //    routes.MapRoute(
-            //        name: "defaultWithArea",
-            //        template: "api/{area}/{controller=Home}/{action=Index}/{id?}");
-
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "api/{controller=Home}/{action=Index}/{id?}");
-            //});
 
             app.UseEndpoints(endpoints =>
             {

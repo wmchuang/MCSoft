@@ -13,32 +13,32 @@ namespace MCSoft.Application
         /// </summary>
         public string Sorting { get; set; }
 
-        private int skipCount = 0;
+        private int _skipCount = 0;
         /// <summary>
         /// 跳过数量
         /// </summary>
         public int SkipCount
         {
-            get { return GetSkipCount(); }
-            set { this.skipCount = value; }
+            get => GetSkipCount();
+            set => _skipCount = value;
         }
 
-        private int maxResultCount = 10;
+        private int _maxResultCount = 10;
         /// <summary>
         /// 页面大小
         /// </summary>
         public int MaxResultCount
         {
-            get { return this.Limit; }
-            set { this.maxResultCount = value; }
+            get => Limit;
+            set => _maxResultCount = value;
         }
 
 
         #region LayUi Table
 
-        public int Page { get; set; }
+        private int Page { get; set; }
 
-        public int Limit { get; set; }
+        private int Limit { get; set; }
 
         public string Keyword { get; set; }
 
@@ -47,7 +47,7 @@ namespace MCSoft.Application
             if (Page <= 0)
                 throw new UserFriendlyException("页码必须大于0");
 
-            return (this.Page - 1) * this.Limit;
+            return (Page - 1) * Limit;
         }
         #endregion
     }

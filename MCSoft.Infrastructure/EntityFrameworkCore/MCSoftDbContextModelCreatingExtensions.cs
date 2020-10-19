@@ -85,6 +85,11 @@ namespace MCSoft.Infrastructure.EntityFrameworkCore
                 b.ToTable(MCSoftConsts.DbTablePrefix + "evaluates", MCSoftConsts.DbSchema);
                 b.ConfigureByConvention();
             });
+            builder.Entity<HandleLog>(b =>
+            {
+                b.ToTable(MCSoftConsts.DbTablePrefix + "handlelogs", MCSoftConsts.DbSchema);
+                b.ConfigureByConvention();
+            });
             #endregion
         }
     }
